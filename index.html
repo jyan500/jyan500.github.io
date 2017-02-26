@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS</title>
+<title>Jansen Yan</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="w3.css">
 <body>
-
+<!-- define the sidebar-->
 <nav class="w3-sidenav w3-light-grey" style="width:300px">
   <div class="w3-container w3-dark-grey">
     <h4>Jansen Yan</h4>
@@ -16,6 +16,7 @@
   <a href="javascript:void(0)" class="tablink" onclick="openLink(event, 'Contact')">Contact</a>
 </nav>
 
+<!-- This section below is defining what's within each tab-->
 <div style="margin-left:300px">
   <div class="w3-padding"></div>
   <div id="Home" class="w3-container content w3-animate-opacity" style="display:block">
@@ -50,7 +51,10 @@
   </div>
 
 
-
+<!-- define the behavior of the tabs--
+The openCity() function is called when the user clicks on one of the buttons in the menu.
+The function hides all elements with the class name "city" (display="none"),
+ and displays the element with the given city name (display="block");-->
 <script>
 function openLink(evt, animName) {
   var i, x, tablinks;
