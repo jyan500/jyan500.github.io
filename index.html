@@ -4,71 +4,131 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="w3.css">
 <body>
-<!-- define the sidebar-->
-<nav class="w3-sidenav w3-light-grey" style="width:300px">
-  <div class="w3-container w3-dark-grey">
-    <h4>Jansen Yan</h4>
-  </div>
-  <img src="picture.jpg" alt="Me" class="w3-round" style = width:100%>
-  <a href="javascript:void(0)" class="tablink" onclick="openLink(event, 'Home')">Home</a>
-  <a href="javascript:void(0)" class="tablink" onclick="openLink(event, 'Projects')">Projects</a>
-  <a href="javascript:void(0)" class="tablink" onclick="openLink(event, 'About')">About</a>
-  <a href="javascript:void(0)" class="tablink" onclick="openLink(event, 'Contact')">Contact</a>
-</nav>
+	<!-- define the sidebar-->
+	<div class="w3-sidebar w3-bar-block w3-light-gray w3-mobile" style="width:300px">
+		<div class="w3-round-large w3-card-4 w3-mobile">
+			<header class = "w3-panel w3-dark-gray w3-round-large w3-padding w3-border">
+				<h4> Jansen Yan </h4>
+			</header>
+			<img src="picture2.jpg" alt="Me" class="w3-round-xxlarge w3-border w3-mobile w3-padding" style = "width:100%">
+		</div>
+		<div class = "w3-panel w3-mobile w3-round-large w3-padding-16">
+			<button class="w3-bar-item w3-button w3-round tablink w3-mobile w3-padding-large" onclick="openLink(event, 'Home')"><b>Home</b></button>
+			<button class="w3-bar-item w3-button w3-round tablink w3-mobile w3-padding-large" onclick="openLink(event, 'Projects')">Projects</button>
+			<button class="w3-bar-item w3-button w3-round tablink w3-mobile w3-padding-large" onclick="openLink(event, 'About')">About</button>
+			<button class="w3-bar-item w3-button w3-round tablink w3-mobile w3-padding-large" onclick="openLink(event, 'Contact')">Contact</button>
+		</div>
+	</div>
 
-<!-- This section below is defining what's within each tab-->
-<div style="margin-left:300px">
-  <div class="w3-padding"></div>
-  <div id="Home" class="w3-container content w3-animate-opacity" style="display:block">
-    <h2>Welcome to my website! Please feel free to look around.</h2>
-  </div>
-  
+	<!-- This section below is defining what's within each tab-->
+	<div class = "w3-container w3-light-gray w3-mobile" style="margin-left:300px">
+	<!-- <div class="w3-padding"></div> -->
+		<div id="Home" align = "center" class="w3-container content w3-animate-opacity w3-padding w3-mobile" style="display:block">
+			<div class = "w3-panel w3-teal w3-round w3-mobile">
+				<h2>Welcome to my website! Please feel free to look around.</h2>
+			</div>
+			<div class = "w3-border w3-display-container w3-mobile">
+				<img class = "mySlides w3-animate-opacity w3-round-large w3-mobile" src = "tsim_tsa_tsui.jpg" style="width:80%">
+				<img class = "mySlides w3-animate-opacity w3-round-large w3-mobile" src = "Taiwan_Park.jpg" style="width:80%">
+				<img class = "mySlides w3-animate-opacity w3-round-large w3-mobile" src = "Taiwan.jpg" style="width:80%">
+				<img class = "mySlides w3-animate-opacity w3-round-large w3-mobile" src = "portland.jpg" style="width:80%">
+				<img class = "mySlides w3-animate-opacity w3-round-large w3-mobile" src = "potato_chip.jpg" style="width:80%">
+				<!--- &10094; is the left arrow icon --->
+				<button class = "w3-button w3-display-left"  onclick = "changeSlide(-1)">&#10094;</button>
+				<button class = "w3-button w3-display-right" onclick = "changeSlide(1)">&#10095;</button>
+			</div>
+		</div>
 
-  <div id="Projects" class="w3-container content w3-animate-opacity" style="display:none">
-    <h2>Projects</h2>
-	<hr>
-	<p>More will be added soon </p>
-    <ul style="list-style-type:disc">
-	<li><a href="ResumeRoughCopy.pdf" download="JansenYanResume">Download my Resume here</a></li>
-	<li><a href="http://github.com/jyan500" target = "_blank">My Github </a></li>
-  </div>
-  <div id="About" class="w3-container content w3-animate-opacity" style="display:none">
-    <h2>About</h2>
-	<hr>
-    <ul style="list-style-type:disc">
-	<li>Current Occupation: 3rd Year Undergraduate at University of California, Irvine</li>
-	<li>Major: Computer Science</li>
-	<li>Hobbies: Basketball, Badminton, Music, Playing Piano</li>
-	<li>Hometown: San Francisco, CA</li>
-	</ul>
-  </div>
-  <div id="Contact" class="w3-container content w3-animate-opacity" style="display:none">
-    <h2>Contact</h2>
-	<hr>
-    <p>Please feel free to contact me at yanjl@uci.edu </p>
-	</ul>
+
+		<div id="Projects" align = "center" class="content w3-container w3-light-gray w3-animate-opacity w3-padding w3-mobile" style="display:none">
+			<div class = "w3-panel w3-round w3-teal">
+				<h2>Projects</h2>
+			</div>
+			<p>More will be added soon </p>
+			<ul class="w3-ul w3-center">
+			<li><a href="ResumeRoughCopy.pdf" download="JansenYanResume">Download my Resume here</a></li>
+			<li><a href="http://github.com/jyan500" target = "_blank">My Github </a></li>
+			</ul>
+		</div>
+		<div id="About" align = "center" class="content w3-container w3-light-gray content w3-animate-opacity w3-padding w3-mobile" style="display:none">
+			<div class = "w3-panel w3-round w3-teal">
+				<h2>About</h2>
+			</div>
+			<table class="w3-table w3-striped w3-border w3-center">
+				<tr>
+					<td>Education</td> 
+					<td>4th Year Undergraduate at University of California, Irvine</td>
+				<tr>
+					<td>Major</td>
+					<td>Computer Science</td>
+				<tr>
+					<td>Skills</td>
+					<td>Python, Java, Web Development, MySQL</td>
+				<tr>
+					<td>Experience</td>
+					<td>UCI Programming Lab Tutor</td>
+				</tr>
+			</table>
+		</div>
 	
-  </div>
+		<div id="Contact" align = "center" class="content w3-container w3-light-gray content w3-animate-opacity w3-padding w3-mobile" style="display:none">
+			<div class = "w3-panel w3-round w3-teal">
+				<h2>Contact</h2>
+			</div>
+			<hr>
+			<p>Please feel free to contact me at yanjl@uci.edu </p>
+			</ul>
+		</div>
+	</div>
 
+	<!-- define the behavior of the tabs
+	The openCity() function is called when the user clicks on one of the buttons in the menu.
+	The function hides all elements with the class name "city" (display="none"),
+	and displays the element with the given city name (display="block");-->
+	<script>
+		function openLink(evt, animName) {
+			var i, x, tablinks;
+			x = document.getElementsByClassName("content");
+			for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none";
+			}
+			tablinks = document.getElementsByClassName("tablink");
+			for (i = 0; i < x.length; i++) {
+			 tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+			}
+			document.getElementById(animName).style.display = "block";
+			evt.currentTarget.className += " w3-red";
+		}
+	</script>      
+	<script>
+		var slideIndex = 1;
+		showSlide(slideIndex)
+		function changeSlide(n){
+			<!--- increment or decrement slideIndex by 1 --->
+			slideIndex += n
+			showSlide(slideIndex)
+		}
+		function showSlide(n){
+			<!--- n represents your current slideIndex --->
+			var i;
+			var x = document.getElementsByClassName("mySlides");
+			<!--- x.length represents the number of slides you have --->
 
-<!-- define the behavior of the tabs--
-The openCity() function is called when the user clicks on one of the buttons in the menu.
-The function hides all elements with the class name "city" (display="none"),
- and displays the element with the given city name (display="block");-->
-<script>
-function openLink(evt, animName) {
-  var i, x, tablinks;
-  x = document.getElementsByClassName("content");
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < x.length; i++) {
-     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
-  }
-  document.getElementById(animName).style.display = "block";
-  evt.currentTarget.className += " w3-red";
-}
-</script>      
+			if (n > x.length){
+				slideIndex = 1
+			}
+			if (n < 1){
+				slideIndex = x.length;
+			}
+			<!--- loop through all slides and hide them from view --->
+			for (i = 0; i < x.length; i++){
+				x[i].style.display = "none";
+			}
+			<!--- change the proper slide to display --->
+			x[slideIndex - 1].style.display = "block";
+
+		}
+		
+	</script>
 </body>
 </html>
