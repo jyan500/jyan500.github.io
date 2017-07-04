@@ -5,24 +5,26 @@
 <link rel="stylesheet" href="w3.css">
 <body>
 	<!-- define the sidebar-->
-	<div class="w3-sidebar w3-bar-block w3-light-gray w3-mobile" style="width:300px">
-		<div class="w3-round-large w3-card-4 w3-mobile">
+	<div id = "sideBar" class="w3-sidebar w3-bar-block w3-animate-opacity w3-animate-left w3-collapse w3-light-gray" style="width:300px">
+		<button class = "w3-bar-item w3-button w3-large w3-hide-large" onclick = "closeButton()">Close &times;</button>
+		<div class="w3-round-large w3-card-4">
 			<header class = "w3-panel w3-dark-gray w3-round-large w3-padding w3-border">
 				<h4> Jansen Yan </h4>
 			</header>
-			<img src="picture2.jpg" alt="Me" class="w3-round-xxlarge w3-border w3-mobile w3-padding" style = "width:100%">
+			<img src="picture2.jpg" alt="Me" class="w3-round-xxlarge w3-border w3-padding" style = "width:100%">
 		</div>
 		<div class = "w3-panel w3-mobile w3-round-large w3-padding-16">
-			<button class="w3-bar-item w3-button w3-round tablink w3-mobile w3-padding-large" onclick="openLink(event, 'Home')"><b>Home</b></button>
-			<button class="w3-bar-item w3-button w3-round tablink w3-mobile w3-padding-large" onclick="openLink(event, 'Projects')">Projects</button>
-			<button class="w3-bar-item w3-button w3-round tablink w3-mobile w3-padding-large" onclick="openLink(event, 'About')">About</button>
-			<button class="w3-bar-item w3-button w3-round tablink w3-mobile w3-padding-large" onclick="openLink(event, 'Contact')">Contact</button>
+			<button class="w3-bar-item w3-button w3-round tablink w3-padding-large" onclick="openLink(event, 'Home')"><b>Home</b></button>
+			<button class="w3-bar-item w3-button w3-round tablink w3-padding-large" onclick="openLink(event, 'Projects')">Projects</button>
+			<button class="w3-bar-item w3-button w3-round tablink w3-padding-large" onclick="openLink(event, 'About')">About</button>
+			<button class="w3-bar-item w3-button w3-round tablink w3-padding-large" onclick="openLink(event, 'Contact')">Contact</button>
 		</div>
 	</div>
 
 	<!-- This section below is defining what's within each tab-->
-	<div class = "w3-container w3-light-gray w3-mobile" style="margin-left:300px">
+	<div class = "w3-main w3-light-gray w3-mobile" style="margin-left:300px">
 	<!-- <div class="w3-padding"></div> -->
+		<button class = "w3-button w3-teal w3-xlarge w3-hide-large" onclick = "openButton()">&#9776;</button>
 		<div id="Home" align = "center" class="w3-container content w3-animate-opacity w3-padding w3-mobile" style="display:block">
 			<div class = "w3-panel w3-teal w3-round w3-mobile">
 				<h2>Welcome to my website! Please feel free to look around.</h2>
@@ -128,7 +130,15 @@
 			x[slideIndex - 1].style.display = "block";
 
 		}
-		
+	</script>
+	<script>
+		function openButton(){
+			document.getElementById("sideBar").style.display = "block";
+		}
+		function closeButton(){
+			document.getElementById("sideBar").style.display = "none";
+		}
+
 	</script>
 </body>
 </html>
