@@ -3,10 +3,11 @@
 <title>Jansen Yan</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="w3.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <body>
 	<!-- define the sidebar-->
-	<div id = "sideBar" class="w3-sidebar w3-bar-block w3-animate-opacity w3-animate-left w3-collapse w3-light-gray" style="width:300px">
-		<button class = "w3-bar-item w3-button w3-large w3-hide-large" onclick = "closeButton()">Close &times;</button>
+	<div id = "sideBar" class="w3-sidebar w3-bar-block w3-collapse w3-light-gray w3-animate-left" style="width:300px">
+		
 		<div class="w3-round-large w3-card-4">
 			<header class = "w3-panel w3-dark-gray w3-round-large w3-padding w3-border">
 				<h4> Jansen Yan </h4>
@@ -18,23 +19,49 @@
 			<button class="w3-bar-item w3-button w3-round tablink w3-padding-large" onclick="openLink(event, 'Projects')">Projects</button>
 			<button class="w3-bar-item w3-button w3-round tablink w3-padding-large" onclick="openLink(event, 'About')">About</button>
 			<button class="w3-bar-item w3-button w3-round tablink w3-padding-large" onclick="openLink(event, 'Contact')">Contact</button>
+			<button class = "w3-bar-item w3-button w3-round w3-hide-large w3-padding-large" onclick = "closeButton(event)">Close &times;</button>
 		</div>
 	</div>
 
 	<!-- This section below is defining what's within each tab-->
-	<div class = "w3-main w3-light-gray w3-mobile" style="margin-left:300px">
+	<div class = "w3-main w3-mobile" style="margin-left:300px">
 	<!-- <div class="w3-padding"></div> -->
-		<button class = "w3-button w3-teal w3-xlarge w3-hide-large" onclick = "openButton()">&#9776;</button>
-		<div id="Home" align = "center" class="w3-container content w3-animate-opacity w3-padding w3-mobile" style="display:block">
+		<button class = "w3-button w3-teal w3-xlarge w3-hide-large" onclick = "openButton(event)">&#9776;</button>
+		<div id="Home" align = "center" class="w3-container w3-light-gray content w3-animate-opacity w3-padding w3-mobile" style="display:block">
 			<div class = "w3-panel w3-teal w3-round w3-mobile">
 				<h2>Welcome to my website! Please feel free to look around.</h2>
 			</div>
 			<div class = "w3-border w3-display-container w3-mobile">
-				<img class = "mySlides w3-animate-opacity w3-round-large w3-mobile" src = "tsim_tsa_tsui.jpg" style="width:80%">
-				<img class = "mySlides w3-animate-opacity w3-round-large w3-mobile" src = "Taiwan_Park.jpg" style="width:80%">
-				<img class = "mySlides w3-animate-opacity w3-round-large w3-mobile" src = "Taiwan.jpg" style="width:80%">
-				<img class = "mySlides w3-animate-opacity w3-round-large w3-mobile" src = "portland.jpg" style="width:80%">
-				<img class = "mySlides w3-animate-opacity w3-round-large w3-mobile" src = "potato_chip.jpg" style="width:80%">
+				<div class = "w3-display-container mySlides w3-animate-opacity w3-round-large w3-mobile" style = "width:80%">
+					<img src = "tsim_tsa_tsui.jpg" style="width:100%">
+					<div class = "w3-container w3-padding-large w3-black w3-display-bottomleft w3-mobile">
+						Tsim Tsa Tsui, Hong Kong
+					</div>
+			</div>
+				<div class = "w3-display-container mySlides w3-animate-opacity w3-round-large w3-mobile" style = "width:80%">
+					<img src = "Taiwan_Park.jpg" style="width:100%">
+					<div class = "w3-container w3-padding-large w3-black w3-display-bottomleft w3-mobile">
+						Luodong, Taiwan
+					</div>
+				</div>
+				<div class = "w3-display-container mySlides w3-animate-opacity w3-round-large w3-mobile" style = "width:80%">
+					<img src = "Taiwan.jpg" style="width:100%">
+					<div class = "w3-container w3-padding-large w3-black w3-display-bottomleft w3-mobile">
+						Taipei, Taiwan
+					</div>
+				</div>
+				<div class = "w3-display-container mySlides w3-animate-opacity w3-round-large w3-mobile" style = "width:80%">
+					<img src = "portland.jpg" style="width:100%">
+					<div class = "w3-container w3-padding-large w3-black w3-display-bottomleft w3-mobile">
+						Portland, Oregon
+					</div>
+				</div>
+				<div class = "w3-display-container mySlides w3-animate-opacity w3-round-large w3-mobile" style = "width:80%">
+					<img src = "potato_chip.jpg" style="width:100%">
+					<div class = "w3-container w3-padding-large w3-black w3-display-bottomleft w3-mobile">
+						Potato Chip Rock
+					</div>
+				</div>
 				<!--- &10094; is the left arrow icon --->
 				<button class = "w3-button w3-display-left"  onclick = "changeSlide(-1)">&#10094;</button>
 				<button class = "w3-button w3-display-right" onclick = "changeSlide(1)">&#10095;</button>
@@ -46,17 +73,42 @@
 			<div class = "w3-panel w3-round w3-teal">
 				<h2>Projects</h2>
 			</div>
-			<p>More will be added soon </p>
-			<ul class="w3-ul w3-center">
-			<li><a href="ResumeRoughCopy.pdf" download="JansenYanResume">Download my Resume here</a></li>
-			<li><a href="http://github.com/jyan500" target = "_blank">My Github </a></li>
-			</ul>
-		</div>
-		<div id="About" align = "center" class="content w3-container w3-light-gray content w3-animate-opacity w3-padding w3-mobile" style="display:none">
-			<div class = "w3-panel w3-round w3-teal">
-				<h2>About</h2>
+			<div class = "w3-container w3-display-light-gray w3-padding">
+				<p>See more projects at my Github</p>
+				<ul class="w3-ul w3-center">
+					<li><a href="http://github.com/jyan500">My Github </a></li>
+				</ul>
 			</div>
-			<table class="w3-table w3-striped w3-border w3-center">
+			<div class = "w3-container w3-mobile w3-light-gray">
+				<div class = "w3-container w3-padding w3-half"> 
+					<div class = "w3-panel w3-round w3-gray">
+						<h> Projects Done in Python </h>
+					</div>
+					<ul class = "w3-ul w3-border">
+						<li> Othello GUI </li>
+						<li> Weather GUI </li>
+						<li> Yahoo StockChecker </li>
+					</ul>
+				</div>
+				<div class = "w3-container w3-padding w3-half "> 
+					<div class = "w3-panel w3-round w3-gray">
+						<h> Projects Done in Java </h>
+					</div>
+					<ul class = "w3-ul w3-border">
+						<li> Multithreaded Elevator Lab</li>
+						<li> Fabflix Movie Website (JSP, MySQL, HTML, CSS) </li>
+						<li> Fabflix Android App </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="About" align = "center" class="content w3-container content w3-animate-opacity w3-padding w3-mobile" style="display:none">
+			<div class = "w3-container w3-light-gray">
+				<div class = "w3-panel w3-round w3-teal">
+					<h2>About</h2>
+				</div>
+			</div>
+			<table class="w3-table w3-striped w3-bordered w3-centered">
 				<tr>
 					<td>Education</td> 
 					<td>4th Year Undergraduate at University of California, Irvine</td>
@@ -70,14 +122,17 @@
 					<td>Experience</td>
 					<td>UCI Programming Lab Tutor</td>
 				</tr>
+				<tr>
+					<td>Resume</td>
+					<td><a href="ResumeRoughCopy.pdf" download="JansenYanResume">Download my Resume here</a></td>
+				</tr>
 			</table>
 		</div>
 	
-		<div id="Contact" align = "center" class="content w3-container w3-light-gray content w3-animate-opacity w3-padding w3-mobile" style="display:none">
+		<div id="Contact" align = "center" class="content w3-container content w3-animate-opacity w3-padding w3-mobile" style="display:none">
 			<div class = "w3-panel w3-round w3-teal">
 				<h2>Contact</h2>
 			</div>
-			<hr>
 			<p>Please feel free to contact me at yanjl@uci.edu </p>
 			</ul>
 		</div>
@@ -87,6 +142,7 @@
 	The openCity() function is called when the user clicks on one of the buttons in the menu.
 	The function hides all elements with the class name "city" (display="none"),
 	and displays the element with the given city name (display="block");-->
+
 	<script>
 		function openLink(evt, animName) {
 			var i, x, tablinks;
@@ -132,10 +188,10 @@
 		}
 	</script>
 	<script>
-		function openButton(){
+		function openButton(event){
 			document.getElementById("sideBar").style.display = "block";
 		}
-		function closeButton(){
+		function closeButton(event){
 			document.getElementById("sideBar").style.display = "none";
 		}
 
