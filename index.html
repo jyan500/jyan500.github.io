@@ -26,45 +26,46 @@
 	<!-- This section below is defining what's within each tab-->
 	<div class = "w3-main w3-mobile" style="margin-left:300px">
 	<!-- <div class="w3-padding"></div> -->
-		<button class = "w3-button w3-teal w3-xlarge w3-hide-large" onclick = "openButton(event)">&#9776;</button>
+		<!-- <button id = "sideBarButton" class = "w3-button w3-teal w3-xlarge w3-hide-large" onclick = "openButton(event)">&#9776;</button> -->
+		<button id = "sideBarButton" class = "w3-button w3-teal w3-xlarge w3-hide-large">&#9776;</button>
 		<div id="Home" align = "center" class="w3-container w3-light-gray content w3-animate-opacity w3-padding w3-mobile" style="display:block">
 			<div class = "w3-panel w3-teal w3-round w3-mobile">
 				<h2>Welcome to my website! Please feel free to look around.</h2>
 			</div>
 			<div class = "w3-border w3-display-container w3-mobile">
-				<div class = "w3-display-container mySlides w3-animate-opacity w3-round-large w3-mobile" style = "width:80%">
-					<img src = "tsim_tsa_tsui.jpg" style="width:100%">
-					<div class = "w3-container w3-padding-large w3-black w3-display-bottomleft w3-mobile">
+				<div class = "w3-display-container mySlides w3-animate-opacity w3-mobile" style = "width:80%">
+					<img class = "w3-border w3-round" src = "tsim_tsa_tsui.jpg" style="width:100%">
+					<div class = "w3-container w3-padding-large w3-black w3-display-bottomleft">
 						Tsim Tsa Tsui, Hong Kong
 					</div>
 			</div>
-				<div class = "w3-display-container mySlides w3-animate-opacity w3-round-large w3-mobile" style = "width:80%">
-					<img src = "Taiwan_Park.jpg" style="width:100%">
-					<div class = "w3-container w3-padding-large w3-black w3-display-bottomleft w3-mobile">
+				<div class = "w3-display-container mySlides w3-animate-opacity w3-mobile" style = "width:80%">
+					<img class = "w3-border" src = "Taiwan_Park.jpg" style="width:100%">
+					<div class = "w3-container w3-padding-large w3-black w3-display-bottomleft">
 						Luodong, Taiwan
 					</div>
 				</div>
-				<div class = "w3-display-container mySlides w3-animate-opacity w3-round-large w3-mobile" style = "width:80%">
-					<img src = "Taiwan.jpg" style="width:100%">
-					<div class = "w3-container w3-padding-large w3-black w3-display-bottomleft w3-mobile">
+				<div class = "w3-display-container mySlides w3-animate-opacity w3-mobile" style = "width:80%">
+					<img class = "w3-border" src = "Taiwan.jpg" style="width:100%">
+					<div class = "w3-container w3-padding-large w3-black w3-display-bottomleft">
 						Taipei, Taiwan
 					</div>
 				</div>
-				<div class = "w3-display-container mySlides w3-animate-opacity w3-round-large w3-mobile" style = "width:80%">
-					<img src = "portland.jpg" style="width:100%">
-					<div class = "w3-container w3-padding-large w3-black w3-display-bottomleft w3-mobile">
+				<div class = "w3-display-container mySlides w3-animate-opacity w3-mobile" style = "width:80%">
+					<img class = "w3-border" src = "portland.jpg" style="width:100%">
+					<div class = "w3-container w3-padding-large w3-black w3-display-bottomleft">
 						Portland, Oregon
 					</div>
 				</div>
-				<div class = "w3-display-container mySlides w3-animate-opacity w3-round-large w3-mobile" style = "width:80%">
-					<img src = "potato_chip.jpg" style="width:100%">
-					<div class = "w3-container w3-padding-large w3-black w3-display-bottomleft w3-mobile">
+				<div class = "w3-display-container mySlides w3-animate-opacity w3-mobile" style = "width:80%">
+					<img class = "w3-border" src = "potato_chip.jpg" style="width:100%">
+					<div class = "w3-container w3-padding-large w3-black w3-display-bottomleft">
 						Potato Chip Rock
 					</div>
 				</div>
 				<!--- &10094; is the left arrow icon --->
-				<button class = "w3-button w3-display-left"  onclick = "changeSlide(-1)">&#10094;</button>
-				<button class = "w3-button w3-display-right" onclick = "changeSlide(1)">&#10095;</button>
+				<button class = "w3-button w3-round-xlarge w3-display-left"  onclick = "changeSlide(-1)">&#10094;</button>
+				<button class = "w3-button w3-round-xlarge w3-display-right" onclick = "changeSlide(1)">&#10095;</button>
 			</div>
 		</div>
 
@@ -85,9 +86,9 @@
 						<h> Projects Done in Python </h>
 					</div>
 					<ul class = "w3-ul w3-border">
-						<li> Othello GUI </li>
-						<li> Weather GUI </li>
-						<li> Yahoo StockChecker </li>
+						<li> <a href= "https://github.com/jyan500/Projects/tree/master/othello_GUI">Othello GUI</a> </li>
+						<li> <a href = "https://github.com/jyan500/Projects/tree/master/currentWeather">Weather GUI</a> </li>
+						<li> <a href = "https://github.com/jyan500/Projects/tree/master/stockChecker">Yahoo StockChecker</a></li>
 					</ul>
 				</div>
 				<div class = "w3-container w3-padding w3-half "> 
@@ -98,6 +99,15 @@
 						<li> Multithreaded Elevator Lab</li>
 						<li> Fabflix Movie Website (JSP, MySQL, HTML, CSS) </li>
 						<li> Fabflix Android App </li>
+					</ul>
+				</div>
+				<div class = "w3-cell w3-container w3-padding">
+					<div class = "w3-panel w3-round w3-gray">
+						<h> In-Progress </h>
+					</div>
+					<ul class = "w3-ul w3-border">
+						<li> <a href = "https://github.com/jyan500/Chess-GUI-V2">Chess Graphics User Interface in Python</a> </li>
+						<li> Web Application using Digital Bible Platform </li>
 					</ul>
 				</div>
 			</div>
@@ -190,10 +200,48 @@
 	<script>
 		function openButton(event){
 			document.getElementById("sideBar").style.display = "block";
+			console.log("opened Button");
 		}
 		function closeButton(event){
 			document.getElementById("sideBar").style.display = "none";
 		}
+
+	</script>
+	<script>
+		var $specifiedElement = $("#sideBar");
+		var $click = 0;
+		$('#sideBarButton').click(function() {
+
+			$("#sideBar").show();
+			console.log("hello");
+			$click = 0;
+		});
+		$(document).on('click', function(event) {
+			if (!$(event.target).closest("#sideBar").length) {
+			// Hide the menus.
+				console.log("hide");
+				if ($click != 0){
+					$("#sideBar").fadeOut();
+				}	
+				$click++;
+				
+			}
+			
+		});
+		// //I'm using "click" but it works with any event
+		// document.addEventListener('click', function(event) {
+		// 	var ifOpened = specifiedElement.style.display;
+		// 	if (ifOpened == "block"){
+
+		// 		var isClickInside = specifiedElement.contains(event.target);
+
+		// 		if (!isClickInside) {
+		// 		//the click was outside the specifiedElement, do something
+		// 		// document.getElementById("sideBar").style.display = "none";
+		// 		console.log("hello");
+
+		// 	}
+		// }
 
 	</script>
 </body>
