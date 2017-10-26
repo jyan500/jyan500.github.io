@@ -27,17 +27,22 @@
 	<div class = "w3-main w3-mobile" style="margin-left:300px">
 	<!-- <div class="w3-padding"></div> -->
 		<!-- <button id = "sideBarButton" class = "w3-button w3-teal w3-xlarge w3-hide-large" onclick = "openButton(event)">&#9776;</button> -->
-		<button id = "sideBarButton" class = "w3-button w3-teal w3-xlarge w3-hide-large">&#9776;</button>
+		
+		<div id = "header" align = "center" class = "w3-panel w3-teal w3-round w3-mobile">
+			<button id = "sideBarButton" class = "w3-button w3-teal w3-xlarge w3-hide-large">&#9776;</button>
+			<h2>Welcome to my website! Please feel free to look around</h2>
+		</div>
 		<div id="Home" align = "center" class="w3-container w3-light-gray content w3-animate-opacity w3-padding w3-mobile" style="display:block">
-			<div class = "w3-panel w3-teal w3-round w3-mobile">
+			<!-- <div class = "w3-panel w3-teal w3-round w3-mobile">
 				<h2>Welcome to my website! Please feel free to look around.</h2>
-			</div>
+			</div> -->
 			<div class = "w3-border w3-display-container w3-mobile">
 				<div class = "w3-display-container mySlides w3-animate-opacity w3-mobile" style = "width:80%">
 					<img class = "w3-border w3-round" src = "tsim_tsa_tsui.jpg" style="width:100%">
 					<div class = "w3-container w3-padding-large w3-black w3-display-bottomleft">
 						Tsim Tsa Tsui, Hong Kong
 					</div>
+				</div>
 			</div>
 				<div class = "w3-display-container mySlides w3-animate-opacity w3-mobile" style = "width:80%">
 					<img class = "w3-border" src = "Taiwan_Park.jpg" style="width:100%">
@@ -71,9 +76,9 @@
 
 
 		<div id="Projects" align = "center" class="content w3-container w3-light-gray w3-animate-opacity w3-padding w3-mobile" style="display:none">
-			<div class = "w3-panel w3-round w3-teal">
+			<!-- <div class = "w3-panel w3-round w3-teal">
 				<h2>Projects</h2>
-			</div>
+			</div> -->
 			<div class = "w3-container w3-display-light-gray w3-padding">
 				<p>See more projects at my Github</p>
 				<ul class="w3-ul w3-center">
@@ -88,7 +93,7 @@
 					<ul class = "w3-ul w3-border">
 						<li> <a href= "https://github.com/jyan500/Projects/tree/master/othello_GUI">Othello GUI</a> </li>
 						<li> <a href = "https://github.com/jyan500/Projects/tree/master/currentWeather">Weather GUI</a> </li>
-						<li> <a href = "https://github.com/jyan500/Projects/tree/master/stockChecker">Yahoo StockChecker</a></li>
+						<li> <a href = "https://github.com/jyan500/Projects/tree/master/stockChecker">(Legacy) Yahoo StockChecker</a></li>
 					</ul>
 				</div>
 				<div class = "w3-container w3-padding w3-half "> 
@@ -114,9 +119,9 @@
 		</div>
 		<div id="About" align = "center" class="content w3-container content w3-animate-opacity w3-padding w3-mobile" style="display:none">
 			<div class = "w3-container w3-light-gray">
-				<div class = "w3-panel w3-round w3-teal">
+				<!-- <div class = "w3-panel w3-round w3-teal">
 					<h2>About</h2>
-				</div>
+				</div> -->
 			</div>
 			<table class="w3-table w3-striped w3-bordered w3-centered">
 				<tr>
@@ -131,18 +136,19 @@
 				<tr>
 					<td>Experience</td>
 					<td>UCI Programming Lab Tutor</td>
+					<td>Internship at Reazon Systems</td>
 				</tr>
 				<tr>
 					<td>Resume</td>
-					<td><a href="ResumeRoughCopy.pdf" download="JansenYanResume">Download my Resume here</a></td>
+					<td><a href="JansenYanResume.pdf" download="JansenYanResume">Download my Resume here</a></td>
 				</tr>
 			</table>
 		</div>
 	
 		<div id="Contact" align = "center" class="content w3-container content w3-animate-opacity w3-padding w3-mobile" style="display:none">
-			<div class = "w3-panel w3-round w3-teal">
+			<!-- <div class = "w3-panel w3-round w3-teal">
 				<h2>Contact</h2>
-			</div>
+			</div> -->
 			<p>Please feel free to contact me at yanjl@uci.edu </p>
 			</ul>
 		</div>
@@ -154,21 +160,39 @@
 	and displays the element with the given city name (display="block");-->
 
 	<script>
+		headerText = {"Home": "Welcome to my website! Please feel free to look around",
+						"Projects": "Projects", 
+						"About": "About",
+						"Contact": "Contact"};
 		function openLink(evt, animName) {
+			// given event (click) and animName (the tab), close all other html elements and open 
+			// the given tab
+
 			var i, x, tablinks;
+			// get all inner html elements and hide them
 			x = document.getElementsByClassName("content");
 			for (i = 0; i < x.length; i++) {
 			x[i].style.display = "none";
 			}
+			
+			$("#header h2").text = headerText[animName];
+			// get all html tablinks and replace the from red to original color 
 			tablinks = document.getElementsByClassName("tablink");
 			for (i = 0; i < x.length; i++) {
 			 tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
 			}
+			// show the content of the tab the user clicked on 
+			// change the color of the sidenav button to red
 			document.getElementById(animName).style.display = "block";
 			evt.currentTarget.className += " w3-red";
 		}
 	</script>      
 	<script>
+		// the two functions control the slideshow on the home page
+		// if the user clicks forwards or backwards on the arrow, increment or decrement slideIndex
+		// get all slides, and show the slide of the current slideIndex, hide the others
+		// if user passes the bounds, reset the slideIndex to either 1 or the last slide
+
 		var slideIndex = 1;
 		showSlide(slideIndex)
 		function changeSlide(n){
@@ -198,50 +222,50 @@
 		}
 	</script>
 	<script>
-		function openButton(event){
-			document.getElementById("sideBar").style.display = "block";
-			console.log("opened Button");
-		}
+		// 7/16/2017 replaced with the jquery script below 
+
+		// function openButton(event){
+		// 	document.getElementById("sideBar").style.display = "block";
+		// 	console.log("opened Button");
+		// }
 		function closeButton(event){
 			document.getElementById("sideBar").style.display = "none";
 		}
-
+		
 	</script>
 	<script>
+	
 		var $specifiedElement = $("#sideBar");
 		var $click = 0;
-		$('#sideBarButton').click(function() {
-
-			$("#sideBar").show();
-			console.log("hello");
-			$click = 0;
-		});
-		$(document).on('click', function(event) {
-			if (!$(event.target).closest("#sideBar").length) {
-			// Hide the menus.
-				console.log("hide");
-				if ($click != 0){
-					$("#sideBar").fadeOut();
-				}	
-				$click++;
-				
-			}
+		$(document).ready(function(){
 			
+			$('#sideBarButton').click(function() {
+
+				$("#sideBar").show();
+				console.log("hello");
+				// reset the click counter back to zero so the hide sidebar (fadeout) condition will not be triggered
+				$click = 0;
+			});
+			// bind event handler to document
+			$(document).on('click', function(event) {
+				// if you click on an element that is not the sidebar, or (the button that shows the sidebar) hide the sidebar
+				if (!$(event.target).closest("#sideBar").length) {
+					// If this the first click, do not hide the sidebar
+					// otherwise the sidebar will not show
+					console.log("hide");
+					if ($click != 0){
+						// hide the sidebar with a fadeout animation 
+						$("#sideBar").fadeOut();
+					}	
+					// increment click number by 1 so next time user clicks, it will trigger the if condition
+					$click++;
+					
+				}
+				
 		});
-		// //I'm using "click" but it works with any event
-		// document.addEventListener('click', function(event) {
-		// 	var ifOpened = specifiedElement.style.display;
-		// 	if (ifOpened == "block"){
-
-		// 		var isClickInside = specifiedElement.contains(event.target);
-
-		// 		if (!isClickInside) {
-		// 		//the click was outside the specifiedElement, do something
-		// 		// document.getElementById("sideBar").style.display = "none";
-		// 		console.log("hello");
-
-		// 	}
-		// }
+		});
+		
+	
 
 	</script>
 </body>
