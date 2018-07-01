@@ -1,0 +1,21 @@
+body {
+	background-color: white;
+	font-family: "Times New Roman";
+	margin-left: 150px;
+	margin-right: 150px;
+}
+header {
+	line-height: 1.5;
+}
+h1, p.contact{
+	text-align: center;
+}
+a:visited{
+	color: teal;
+}
+a:hover{
+	color: blue;
+}
+section {
+	line-height: 1.5;
+}
