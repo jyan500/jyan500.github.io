@@ -4,9 +4,11 @@
 		<meta charset = "utf-8">
 		<title>Jansen Yan's Resume</title>
 		<link rel = "stylesheet" href = "resume.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	</head>
 	<body>
-		<header>
+		<div class = "container main-section">
+			<header>
 			<h1>
 				Jansen Yan
 			</h1>
@@ -33,6 +35,7 @@
 				<strong>B.S in Computer Science</strong>
 				<br>
 				<strong>(Sept 2014 - June 2018)</strong>
+				<br>
 				<strong>GPA: 3.5</strong>
 				<ul>
 					<li>
@@ -56,16 +59,21 @@
 				<strong>(June 2017 - Sept 2017)</strong>
 				<ul>
 					<li>
-						Refactored existing codebase of RCampus, an award winning education management system that provides hundreds of
-						participating institutions with online student portfolios and assessment matrices.
+						Collaborated with intern team to create a RESTful API that streamlines access to thousands of student files in
+backend database.
+
 					</li>
 					<li>
-						Utilized Coldfusion, SQL and XML Parsing to generate student ZIP files for a product integration with Pearson -
-						Higher Education.
+						Utilized Coldfusion, SQL and XML Parsing to query backend database and generate student ZIP files for transfer
+via RESTful API.
+
 					</li>
 					<li>
-						Gained valuable experience working in an Agile Development environment with code reviews, version control and
-						requirements documentation.
+						Increased readability and robustness of codebase by refactoring existing Coldfusion Scripts
+					</li>
+					<li>
+						Emphasized best-practices of software engineering such as documentation, source control and DRY principles.
+
 					</li>
 				</ul>
 				<strong>Computer Science Peer Tutor</strong>
@@ -75,15 +83,15 @@
 				<strong>(March 2017 - June 2018)</strong>
 				<ul>
 					<li>
-						Collaborated with Teacher Assistant to assist a group of 20-25 undergraduates with debugging and conceptual
-						questions.
+						Supervised lab sessions of 20-25 undergraduate students and resolved debugging and conceptual questions
 					</li>
 					<li>
-						Weekly meetings with professors to improve lab sessions and create online guides to supplement student's learning
-						outside lecture	
+						Enhanced student understanding of core concepts such as syntax, if/else statements, loops and basic data structures
+in Python and Java.
+
 					</li>
 					<li>
-						1 year of experience tutoring Python, and 3 months of experience tutoring Java.
+						Created code examples in Python and Java to further supplement student learning outside of lecture
 					</li>
 				</ul>
 			</p>
@@ -122,16 +130,22 @@
 			<strong>Friend-Finder Android Application</strong>
 			<ul>
 				<li>
-					Spearheaded development of an application designed to connect nearby friends.
+					Spearheaded development of an application designed to connect nearby friends based on current location and
+desired meetup location.
+
 				</li>
 				<li>
 					Users create micro-reports by choosing their desired activity, amount of time available and desired hangout location,
 					and their nearby friends will see their report and join their hangout.	
 				</li>
 				<li>
-					Utilizes Yelp Fusion API and Google Places API for recommendation and search for desired meetup locations,
-					and Firebase (with Geofire) as a realtime database with geosearch capabilities.
+					Utilized Google Fused Location API, Firebase and Geofire to store user activity and provide real-time location
+updates and feed of nearby friends.
+
 				</li>	
+				<li>
+					 Generated desired meetup locations based on proximity through Yelp API.
+				</li>
 			</ul>	
 			<strong>Fabflix Online Marketplace</strong>
 			<ul>
@@ -146,16 +160,7 @@
 					Deployed Amazon Web Services EC2 instance to host website.
 				</li>
 				<li>
-					Optimized website performance using JMeter, MySQL Master-Slave Replication and Load-Balancing.	
-				</li>
-			</ul>
-			<strong>Digital Bible Platform</strong>
-			<ul>
-				<li>
-					Developed a web interface to retrieve Bible verses through Digital Bible Platform (dbt.io) API using PHP and cURL. 
-				</li>
-				<li>
-					Currently expanding note-taking interface and fuzzy keyword search features.
+					Improved servlet search time by nearly 40% using JMeter, MySQL Master-Slave Replication and Load-Balancing.
 				</li>
 			</ul>
 
@@ -163,5 +168,7 @@
 
 
 
+		</div>
+		
 	</body>
 </html>

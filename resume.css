@@ -1,9 +1,8 @@
-body {
+.main-section {
 	background-color: white;
-	font-family: "Times New Roman";
 	margin-left: 150px;
 	margin-right: 150px;
-	margin-top: 100px;
+	margin-top: 50px;
 	margin-bottom: 100px;
 }
 header {
@@ -19,5 +18,5 @@ a:hover{
 	color: blue;
 }
 section {
-	line-height: 1.5;
+	line-height: 2;
 }
