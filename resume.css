@@ -21,3 +21,8 @@ section {
 	line-height: 2;
 }
 */
+/* add a space between the icons and links */
+i{
+	margin-right:1rem;
+	display: inline-block;
+}
