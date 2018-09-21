@@ -22,8 +22,12 @@ section {
 }
 */
 /* add a space between the icons and links */
+
 i{
 	margin-right:.5rem;
 	display: inline-block;
+}
+.experience{
+	font-size: .90rem;
 }
 
