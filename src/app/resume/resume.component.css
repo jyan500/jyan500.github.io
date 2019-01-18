@@ -1,0 +1,13 @@
+.webdev-section{
+	display: flex;
+}
+.webdev-section > div{
+	flex: 25%;
+}
+
+.software-engineering{
+	display: flex;
+}
+.software-engineering > div{
+	flex: 25%;
+}
