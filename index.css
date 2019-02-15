@@ -15,6 +15,7 @@ body{
 
   	--dark-blue: #393E75;
   	--beige: #FFFBF8;
+  	--dark-purple: #2F2C3F;
   	box-sizing: border-box;
 }
 .fade-in{
@@ -44,7 +45,7 @@ body{
 	text-decoration: none;
 	margin-left: 20px;
 	margin-right: 20px;
-	color: var(--dark-blue);
+	color: var(--dark-purple);
 }
 .navbar > a:hover{
 	color: white;
