@@ -6,13 +6,33 @@ body{
 	padding: 0;
 	margin: 0;
 	/* fit background size to cover (CREDITS TO PINTEREST FOR THIS IMAGE!) */
+	/* https://www.pinterest.com/pin/752945631429026754/?lp=true */
 	background: url('mountain-range.jpg') no-repeat center center fixed;
 	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
   	background-size: cover;
+
+  	--dark-blue: #393E75;
+  	--beige: #FFFBF8;
+  	box-sizing: border-box;
 }
-.header{
+.fade-in{
+	animation: fadeIn 2s ease forwards;
+	-webkit-animation: fadeIn 2s ease forwards;
+ 	-moz-animation: fadeIn 2s ease forwards;
+ 	-o-animation: fadeIn 2s ease forwards;
+ 	-ms-animation: fadeIn 2s ease forwards;
+}
+
+.hero-card{
+	border: 2px solid var(--beige);
+	margin-top: 20px;
+	padding: 10px 30px 30px 30px;
+	color: var(--dark-blue);
+	text-align: center;
+	font-family: 'Merriweather', serif;
+	width: 50vh;
 }
 .navbar{
 	display: flex;
@@ -24,7 +44,7 @@ body{
 	text-decoration: none;
 	margin-left: 20px;
 	margin-right: 20px;
-	color: black;
+	color: var(--dark-blue);
 }
 .navbar > a:hover{
 	color: white;
@@ -33,16 +53,10 @@ body{
 	text-decoration: none;
 }
 
-.row{
-	display: flex;
-}
-.side-content{
-	flex: 30%;
-	padding: 20px;
-}
 .main-content{
-	flex: 70%;	
-	padding: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .footer{
 	position: fixed;
@@ -63,8 +77,88 @@ body{
 	color: black;
 }
 
+.hamburger{
+	display: none;
+	border: 0;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	outline: none;
+	cursor: pointer;
+	margin: 15px;
+	-webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
+}
+.hamburger > span{
+	display: block;
+	background-color:#484848; 
+    height:3px; 
+    width:26px; 
+    position:relative; 
+    margin:0 auto 5px;
+}
 @media screen and (max-width: 700px){
-	.row, .navbar{
+	.hero-card{
+		width: 40vh;
+	}
+	.navbar{
+		display: none;
 		flex-direction: column;
 	}
+	.footer{
+		display: none;
+	}
+	.hamburger{
+		display: block;
+	}
+}
+
+/* The animation code */
+/*@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}*/
+
+@keyframes fadeIn{
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
 }
