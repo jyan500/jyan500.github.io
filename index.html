@@ -2,9 +2,11 @@
 <head>
     <title> My Portfolio </title> 
     <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
-    <link rel = "stylesheet" href = "index.css">
+    <link rel = "stylesheet" type = "text/css" href = "css/index.css">
+    <link rel = "stylesheet" type = "text/css" href = "css/navbar.css">
+    <link rel = "stylesheet" type = "text/css" href = "css/footer.css">
     <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
-    <script src = "index.js"></script>
+    <script type = "text/javascript" src = "js/index.js"></script>
 </head>
 <body>
     <button class = "hamburger">
@@ -12,14 +14,51 @@
         <span></span>
         <span></span>
     </button>
-    <div class = "main-content">
-        <div id = "hero-card" class = "hero-card fade-in">
-            Hello! Please Visit My <a href = "https://jyan500.github.io/portfolio/"> Updated Site</a>
+    <header>
+        <h1> Portfolio </h1>
+        <ul>
+            <li><a href = "#home">Home</a></li> 
+            <li><a href = "#projects">Projects</a></li> 
+            <li><a href = "#about-me">About Me</a></li> 
+            <li><a href = "#contact-me">Contact Me</a></li> 
+        </ul>
+    </header>
+    <div class = "main">
+        <div class = "container" id = "home">
+            <div class = "hero-card">
+                <h1> Jansen Yan </h1>
+                <p> Software Developer </p>
+            </div>
+        </div>
+        <div class = "container" id = "projects">
+            <h1> Projects </h1>
+            <div class = "projects-container">
+                <div class = "project-card">
+                    <h2> Project 1 </h2>
+                </div>
+                <div class = "project-card">
+                    <h2> Project 2 </h2>
+                </div>
+                <div class = "project-card">
+                    <h2> Project 3 </h2>
+                </div>
+                <div class = "project-card">
+                    <h2> Project 4 </h2>
+                </div>    
+            </div>
+        </div>
+        <div class = "container" id = "about-me">
+            <h1> About Me </h1> 
+            <p> Hello, I'm a software developer from the San Francisco Bay Area with a B.S Degree in Computer Science. </p>
+        </div>
+        <div class = "container" id = "contact-me">
+            <h1> Contact Me </h1> 
+            <p> Feel free to contact me jyan500@gmail.com for any inquiries </p>
         </div>
     </div>
-    <div class = "footer fade-in">
+    <footer>
         <a href = "https://linkedin.com/in/jansenyan"> Linkedin </a>
         <a href = "https://github.com/jyan500"> Github </a>
         <a href = "https://youtube.com"> Youtube </a>
-    </div> 
+    </footer> 
 </body>

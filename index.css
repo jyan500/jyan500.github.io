@@ -17,6 +17,9 @@ body{
   	--beige: #FFFBF8;
   	--dark-purple: #2F2C3F;
   	box-sizing: border-box;
+  	display: flex;
+  	min-height: 100vh;
+  	flex-direction: column;
 }
 .fade-in{
 	animation: fadeIn 2s ease forwards;
@@ -55,16 +58,10 @@ body{
 }
 
 .main-content{
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	flex: 1;
 }
 .footer{
-	position: fixed;
-	padding: 20px;
-	left: 0;
-	right: 0;
-	bottom: 0;
+
 }
 .footer a{
 	display: inline-block;
