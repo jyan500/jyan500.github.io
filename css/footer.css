@@ -5,6 +5,13 @@
 footer {
   padding-left: 80px;
   padding-right: 80px;
+  text-align: center;
+}
+footer a {
+  text-decoration: none;
+  color: black;
+  padding: 30px;
+  font-size: 1.2em;
 }
 
 /*# sourceMappingURL=footer.css.map */

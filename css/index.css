@@ -11,8 +11,9 @@ html, body {
 }
 
 .main .container {
-  padding: 120px 80px 120px 80px;
-  background-color: #EEEEEE;
+  height: 100vh;
+  padding-left: 80px;
+  padding-right: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,8 +24,16 @@ html, body {
 #home .hero-card {
   text-align: center;
   padding: 30px;
-  border: 1px solid white;
+  border: 3px solid white;
   width: 50%;
+  margin-bottom: 100px;
+  font-family: "Merriweather", sans-serif;
+}
+#home .hero-card h1 {
+  font-size: 2.7em;
+}
+#home .hero-card p {
+  font-size: 1.8em;
 }
 
 #projects .projects-container {

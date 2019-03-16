@@ -3,4 +3,11 @@
 footer {
 	padding-left: $left;
 	padding-right: $right;
+	text-align: center;
+	a {
+		text-decoration: none;
+		color: black;
+		padding: 30px;
+		font-size: $nav-links-font-size;
+	}
 }

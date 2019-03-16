@@ -1,5 +1,7 @@
 @import 'variables';
 @import 'mixins';
+$image_url_2: url('../designs/mountain-range-cartoon.png');
+$image_url: url('../designs/google-material-design-wallpaper.jpg');
 html, body {
 	width: 100%;
 	height: 100%;
@@ -9,8 +11,9 @@ html, body {
 }
 .main {
 	.container {
-		padding: 120px $left 120px $right;
-		background-color: #EEEEEE;
+		height: 100vh;
+		padding-left: $left;
+		padding-right: $right;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -18,16 +21,39 @@ html, body {
 		border-bottom: 1px solid white;
 	}
 }
+.parallax {
+	// background-image: $image_url_2;
+	// background-position: center;
+	// background-repeat: no-repeat;
+	// background-size: cover;
+	// background-attachment: fixed;
 
+}
 #home {
+	// background-image: $image_url;
+	// background-position: center;
+	// background-repeat: no-repeat;
+	// background-size: cover;
 	.hero-card {
 		text-align: center;
 		padding: 30px;
-		border: 1px solid white;
+		border: 3px solid white;
 		width: 50%;
+		margin-bottom: 100px;
+		font-family: 'Merriweather', sans-serif;
+		h1 {
+			font-size: 2.7em;
+		}
+		p {
+			font-size: 1.8em;
+		}
 	}
 }
 #projects {
+	// background-image: $image_url_2;
+	// background-position: center;
+	// background-repeat: no-repeat;
+	// background-size: cover;
 	.projects-container {
 		display: flex;
 		justify-content: center;
