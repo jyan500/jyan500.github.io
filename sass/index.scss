@@ -8,6 +8,17 @@ html, body {
 	margin: 0;
 	padding: 0;
 	font-family: 'Source Sans Pro', sans-serif;
+	a {
+		text-decoration: none;
+		color: black;
+		&:visited {
+			color: black;
+		}
+	}
+	p {
+		font-family: 'Lato', sans-serif;
+	}
+
 }
 .main {
 	.container {
@@ -36,13 +47,12 @@ html, body {
 	// background-size: cover;
 	.hero-card {
 		text-align: center;
+		width: 75%;
 		padding: 30px;
-		border: 3px solid white;
-		width: 50%;
 		margin-bottom: 100px;
-		font-family: 'Merriweather', sans-serif;
+		font-family: 'Lato', sans-serif;
 		h1 {
-			font-size: 2.7em;
+			font-size: 6em;
 		}
 		p {
 			font-size: 1.8em;
@@ -59,16 +69,19 @@ html, body {
 		justify-content: center;
 		align-items: center;
 		flex-wrap: wrap;
+		width: 100%;
 		.project-card {
-			flex: 1;
-			padding: 30px;
+			width: 25%;
 			margin-left: 10px;
-			border: 2px solid white;
+			padding: 20px;
+			text-align: center;
 		}
 	}
 }
 #about-me {
-
+	p {
+		margin: 0;
+	}
 }
 
 

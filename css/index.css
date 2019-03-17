@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
-@import url("https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Merriweather");
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+@import url("https://fonts.googleapis.com/css?family=Lato");
+@import url("https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Merriweather|Nunito");
 /* variables */
 /* welcome page variables */
 html, body {
@@ -8,6 +10,16 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: "Source Sans Pro", sans-serif;
+}
+html a, body a {
+  text-decoration: none;
+  color: black;
+}
+html a:visited, body a:visited {
+  color: black;
+}
+html p, body p {
+  font-family: "Lato", sans-serif;
 }
 
 .main .container {
@@ -23,14 +35,13 @@ html, body {
 
 #home .hero-card {
   text-align: center;
+  width: 75%;
   padding: 30px;
-  border: 3px solid white;
-  width: 50%;
   margin-bottom: 100px;
-  font-family: "Merriweather", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 #home .hero-card h1 {
-  font-size: 2.7em;
+  font-size: 6em;
 }
 #home .hero-card p {
   font-size: 1.8em;
@@ -41,12 +52,17 @@ html, body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  width: 100%;
 }
 #projects .projects-container .project-card {
-  flex: 1;
-  padding: 30px;
+  width: 25%;
   margin-left: 10px;
-  border: 2px solid white;
+  padding: 20px;
+  text-align: center;
+}
+
+#about-me p {
+  margin: 0;
 }
 
 /*# sourceMappingURL=index.css.map */
