@@ -23,7 +23,7 @@ html p, body p {
 }
 
 .main .container {
-  height: 100vh;
+  min-height: 100vh;
   padding-left: 80px;
   padding-right: 80px;
   display: flex;
@@ -57,12 +57,14 @@ html p, body p {
   flex-wrap: wrap;
 }
 #projects .projects-container .project-card {
-  width: 25%;
   flex: 1 1 0;
   margin-left: 10px;
   padding-bottom: 20px;
-  border: 2px solid black;
   text-align: center;
+  border: 2px solid #EEEEEE;
+  -webkit-box-shadow: 8px 7px 7px 1px #EEEEEE;
+  -moz-box-shadow: 8px 7px 7px 1px #EEEEEE;
+  box-shadow: 8px 7px 7px 1px #EEEEEE;
 }
 #projects .projects-container .project-card img {
   width: 100%;

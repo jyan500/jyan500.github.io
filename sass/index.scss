@@ -22,7 +22,7 @@ html, body {
 }
 .main {
 	.container {
-		height: 100vh;
+		min-height: 100vh;
 		padding-left: $left;
 		padding-right: $right;
 		display: flex;
@@ -71,12 +71,11 @@ html, body {
 		align-items: center;
 		flex-wrap: wrap;
 		.project-card {
-			width: 25%;
 			flex: 1 1 0;
 			margin-left: 10px;
 			padding-bottom: 20px;
-			border: 2px solid black;
 			text-align: center;
+			border: 2px solid #EEEEEE;
 			img {
 				width: 100%;
 				height: auto;
@@ -86,6 +85,7 @@ html, body {
 				padding-right: 5px;
 			}
 			@include link_hover(1em, .25s);
+			@include shadow(#EEEEEE);
 		}
 	}
 }
