@@ -75,12 +75,33 @@ html, body {
 			margin-left: 10px;
 			padding: 20px;
 			text-align: center;
+			img {
+				width: 100%;
+				height: auto;
+			}
 		}
 	}
 }
 #about-me {
 	p {
 		margin: 0;
+		line-height: 1.5em;
+		font-weight: 300;
+		font-size: 1em;
+	}
+	.skills{
+		display: flex;
+		flex-wrap: wrap;
+		.skill-container {
+			h3 {
+				text-align: center;
+			}
+			li {
+				list-style: none;
+				padding-right: 10px;
+				display: inline-block;
+			}
+		}
 	}
 }
 

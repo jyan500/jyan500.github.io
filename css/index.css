@@ -60,9 +60,28 @@ html p, body p {
   padding: 20px;
   text-align: center;
 }
+#projects .projects-container .project-card img {
+  width: 100%;
+  height: auto;
+}
 
 #about-me p {
   margin: 0;
+  line-height: 1.5em;
+  font-weight: 300;
+  font-size: 1em;
+}
+#about-me .skills {
+  display: flex;
+  flex-wrap: wrap;
+}
+#about-me .skills .skill-container h3 {
+  text-align: center;
+}
+#about-me .skills .skill-container li {
+  list-style: none;
+  padding-right: 10px;
+  display: inline-block;
 }
 
 /*# sourceMappingURL=index.css.map */
