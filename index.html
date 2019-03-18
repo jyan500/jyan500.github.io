@@ -6,7 +6,8 @@
     <link rel = "stylesheet" type = "text/css" href = "css/navbar.css">
     <link rel = "stylesheet" type = "text/css" href = "css/footer.css">
     <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
-    <script type = "text/javascript" src = "js/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type = "text/javascript" src = "js/navbar.js"></script>
 </head>
 <body>
     <button class = "hamburger">
@@ -34,8 +35,8 @@
             <h1> Projects </h1>
             <div class = "projects-container">
                 <div class = "project-card">
-                    <h2> BibleJourney </h2>
                     <img src = "designs/bible_journey.png"/>
+                    <h2> BibleJourney </h2>
                     <p> An Online Bible Notetaking App </p>
                     <a href = "https://biblejourney.herokuapp.com"> Demo </a>
                     <a href = "https://github.com/jyan500/biblejourney"> Github </a>
@@ -60,7 +61,8 @@
             <p> I have a B.S degree in Computer Science from University of California, Irvine, and 2 years of experience in Full Stack Development. </p>
             <p> I currently work as a full stack developer using mainly LAMP Stack, but I am constantly expanding my skill set. </p>
             <p> These are some technologies that I have experience with: </p>
-            <div class = "skills">
+            <br/>
+            <div class = "skills-row">
                 <ul class = "skill-container">
                     <h3> Front End </h3>
                     <li> HTML </li>
@@ -79,12 +81,6 @@
                     <li> Microsoft SQL Server </li>
                 </ul>
                 <ul class = "skill-container">
-                    <h3> Mobile Development </h3>
-                    <li> Android Studio </li>
-                    <li> Ionic 3 </li>
-                    <li> Firebase </li>
-                </ul>
-                <ul class = "skill-container">
                     <h3> Cloud Platforms and Servers </h3> 
                     <li> Nginx </li>
                     <li> Apache </li>
@@ -92,7 +88,13 @@
                     <li> Heroku </li>
                 </ul>
                 <ul class = "skill-container">
-                    <h3> Project Management/Development Tools </h3>
+                    <h3> Mobile Development </h3>
+                    <li> Android Studio </li>
+                    <li> Ionic 3 </li>
+                    <li> Firebase </li>
+                </ul>
+                <ul class = "skill-container">
+                    <h3> Software Development Tools </h3>
                     <li> Jira </li>
                     <li> Slack </li>
                     <li> NPM </li>

@@ -45,6 +45,7 @@ html, body {
 	// background-position: center;
 	// background-repeat: no-repeat;
 	// background-size: cover;
+	height: 100vh;
 	.hero-card {
 		text-align: center;
 		width: 75%;
@@ -69,16 +70,22 @@ html, body {
 		justify-content: center;
 		align-items: center;
 		flex-wrap: wrap;
-		width: 100%;
 		.project-card {
 			width: 25%;
+			flex: 1 1 0;
 			margin-left: 10px;
-			padding: 20px;
+			padding-bottom: 20px;
+			border: 2px solid black;
 			text-align: center;
 			img {
 				width: 100%;
 				height: auto;
 			}
+			a {
+				padding-left: 5px;	
+				padding-right: 5px;
+			}
+			@include link_hover(1em, .25s);
 		}
 	}
 }
@@ -89,20 +96,30 @@ html, body {
 		font-weight: 300;
 		font-size: 1em;
 	}
-	.skills{
+	.skills-row{
 		display: flex;
+		justify-content: center;
 		flex-wrap: wrap;
+		padding: 0;
+		margin-right: 30px;
 		.skill-container {
-			h3 {
-				text-align: center;
-			}
+			flex: 1 1 0;
+			text-align: center;
 			li {
+				font-weight: 700;
+				vertical-align: top;
 				list-style: none;
-				padding-right: 10px;
 				display: inline-block;
+				padding: 5px;
+				margin-right: 10px;
+				margin-bottom: 10px;
+				border: 2px solid black;
+				border-radius: 10px;
 			}
 		}
+		
 	}
 }
+
 
 

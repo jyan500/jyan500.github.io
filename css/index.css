@@ -33,6 +33,9 @@ html p, body p {
   border-bottom: 1px solid white;
 }
 
+#home {
+  height: 100vh;
+}
 #home .hero-card {
   text-align: center;
   width: 75%;
@@ -52,17 +55,57 @@ html p, body p {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  width: 100%;
 }
 #projects .projects-container .project-card {
   width: 25%;
+  flex: 1 1 0;
   margin-left: 10px;
-  padding: 20px;
+  padding-bottom: 20px;
+  border: 2px solid black;
   text-align: center;
 }
 #projects .projects-container .project-card img {
   width: 100%;
   height: auto;
+}
+#projects .projects-container .project-card a {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+#projects .projects-container .project-card a {
+  font-size: 1em;
+  text-decoration: none;
+  position: relative;
+}
+#projects .projects-container .project-card a:visited {
+  color: black;
+  text-decoration: none;
+}
+#projects .projects-container .project-card a:before {
+  content: "";
+  position: absolute;
+  margin-bottom: -5px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  background-color: #000;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  -moz-transform: scaleX(0);
+  -o-transform: scaleX(0);
+  transition: all 0.25s ease-in-out 0s;
+  -webkit-transition: all 0.25s ease-in-out 0s;
+  -moz-transition: all 0.25s ease-in-out 0s;
+  -o-transition: all 0.25s ease-in-out 0s;
+  -ms-transition: all 0.25s ease-in-out 0s;
+}
+#projects .projects-container .project-card a:hover:before {
+  /* set visibility back to visible for browser support */
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  -moz-transform: scaleX(1);
+  -o-transform: scaleX(1);
 }
 
 #about-me p {
@@ -71,17 +114,27 @@ html p, body p {
   font-weight: 300;
   font-size: 1em;
 }
-#about-me .skills {
+#about-me .skills-row {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
+  padding: 0;
+  margin-right: 30px;
 }
-#about-me .skills .skill-container h3 {
+#about-me .skills-row .skill-container {
+  flex: 1 1 0;
   text-align: center;
 }
-#about-me .skills .skill-container li {
+#about-me .skills-row .skill-container li {
+  font-weight: 700;
+  vertical-align: top;
   list-style: none;
-  padding-right: 10px;
   display: inline-block;
+  padding: 5px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
 }
 
 /*# sourceMappingURL=index.css.map */
