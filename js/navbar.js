@@ -33,6 +33,7 @@ $(document).ready(function(){
 			$('header').removeClass("fade-out");
 			$('header').addClass("sticky fade-in")
 			$('header').css('background', 'black');
+			$('header h1').css('color', 'white');
 		}
 		else {
 			$('header ul li').removeClass('reverse-hover');
@@ -40,6 +41,7 @@ $(document).ready(function(){
 			$('header').removeClass("sticky fade-in");
 			$('header').addClass("fade-out");
 			$('header').css('background', 'white');
+			$('header h1').css('color', 'black');
 		}
 	});
 });

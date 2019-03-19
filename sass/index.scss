@@ -62,7 +62,7 @@ body {
 		text-align: center;
 		width: 75%;
 		padding: 30px;
-		margin-bottom: 100px;
+		margin-bottom: 300px;
 		font-family: 'Lato', sans-serif;
 		h1 {
 			font-size: $hero-font-size;
@@ -127,20 +127,29 @@ body {
 		justify-content: center;
 		flex-wrap: wrap;
 		padding: 0;
-		margin-right: 30px;
+		margin: 0;
+		// margin-right: 30px;
 		.skill-container {
 			flex: 1 1 0;
-			text-align: center;
+			h3 {
+				text-align: left;
+			}
 			li {
 				font-weight: 700;
 				vertical-align: top;
 				list-style: none;
 				display: inline-block;
-				padding: 5px;
+				padding: 8px;
 				margin-right: 10px;
 				margin-bottom: 10px;
-				border: 2px solid black;
+				border: 2px solid #EEEEEE;
+				background: black;
+				color: white;
 				border-radius: 10px;
+				@include transition_transform(.15s);
+				&:hover{
+					@include transition_scale(1.2);	
+				}
 			}
 		}
 	}

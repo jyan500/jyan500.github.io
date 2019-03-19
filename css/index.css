@@ -116,7 +116,7 @@ body p {
   text-align: center;
   width: 75%;
   padding: 30px;
-  margin-bottom: 100px;
+  margin-bottom: 300px;
   font-family: "Lato", sans-serif;
 }
 #home .hero-card h1 {
@@ -208,22 +208,34 @@ body p {
   justify-content: center;
   flex-wrap: wrap;
   padding: 0;
-  margin-right: 30px;
+  margin: 0;
 }
 #about-me .skills-row .skill-container {
   flex: 1 1 0;
-  text-align: center;
+}
+#about-me .skills-row .skill-container h3 {
+  text-align: left;
 }
 #about-me .skills-row .skill-container li {
   font-weight: 700;
   vertical-align: top;
   list-style: none;
   display: inline-block;
-  padding: 5px;
+  padding: 8px;
   margin-right: 10px;
   margin-bottom: 10px;
-  border: 2px solid black;
+  border: 2px solid #EEEEEE;
+  background: black;
+  color: white;
   border-radius: 10px;
+  -moz-transition: -moz-transform 0.15s linear;
+  -o-transition: -o-transform 0.15s linear;
+  -webkit-transition: -webkit-transform 0.15s linear;
+}
+#about-me .skills-row .skill-container li:hover {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
 }
 
 /*# sourceMappingURL=index.css.map */
