@@ -5,7 +5,6 @@ $(document).ready(function(){
 
 	// set a top padding which is equal to the header height to avoid jumpiness when sticky element becomes fixed
 	$('.main').css('padding-top', $("header").height());
-	
 	// smooth scroll
 	$("header a").click(function(e){
 		if (this.hash !== ""){
@@ -32,14 +31,14 @@ $(document).ready(function(){
 			$('header ul li').removeClass('normal-hover');
 			$('header ul li').addClass('reverse-hover');
 			$('header').removeClass("fade-out");
-			$('header').addClass("sticky fade-in");
+			$('header').addClass("sticky fade-in")
 			$('header').css('background', 'black');
 		}
 		else {
-			$('header').removeClass("sticky fade-in");
 			$('header ul li').removeClass('reverse-hover');
-			$('header').addClass("fade-out");
 			$('header ul li').addClass('normal-hover');
+			$('header').removeClass("sticky fade-in");
+			$('header').addClass("fade-out");
 			$('header').css('background', 'white');
 		}
 	});

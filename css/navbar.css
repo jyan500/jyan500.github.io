@@ -93,6 +93,57 @@ nav ul li {
 
 .hamburger {
   display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 5px;
+}
+
+.show-navbar {
+  display: none;
+  border: 0;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  outline: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -ms-tap-highlight-color: rgba(255, 255, 255, 0);
+  -moz-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+.show-navbar span {
+  display: block;
+  background-color: black;
+  height: 3px;
+  width: 26px;
+  margin: 0 auto 5px;
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  nav {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .show-navbar {
+    display: block;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  nav {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .show-navbar {
+    display: block;
+  }
 }
 
 /*# sourceMappingURL=navbar.css.map */
