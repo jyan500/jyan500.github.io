@@ -16,10 +16,10 @@ $(document).ready(function(){
 			});
 		}
 	});
-
+	let header = $('header');
 	// handle sticky navbar 
 	// get offset position of the navbar 
-	let sticky = $('header').offset().top;
+	let sticky = header.offset().top;
 	console.log('sticky offset position: ' , sticky);
 	// add the sticky class to the header when you reach its scroll position
 	$(window).scroll(function(){
