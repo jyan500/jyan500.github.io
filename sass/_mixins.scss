@@ -38,6 +38,7 @@
 @mixin shadow($color){
 	-webkit-box-shadow: 8px 7px 7px 1px $color;
 	-moz-box-shadow: 8px 7px 7px 1px $color;
+	-o-box-shadow: 8px 7px 1px 1px $color;
 	box-shadow: 8px 7px 7px 1px $color;
 }
 @mixin fade_in($fade_in_time){
@@ -101,13 +102,13 @@
  	-ms-transition: $fade_in_var;
 }
 
-@mixin link_hover($font_size, $fade_in_time){
+@mixin link_hover($font_size, $color, $fade_in_time){
 	a{
 		font-size: $font_size;
 		text-decoration: none;	
 		position: relative;
 		&:visited {
-			color: black;
+			color: $color;
 			text-decoration: none;
 		}
 		&:before {
@@ -118,7 +119,7 @@
 			bottom: 0;
 			left: 0;
 			height: 2px;
-			background-color: #000;
+			background-color: $color;
 			visibility: hidden;
 			@include transition_scale_X(0);
 			@include fade_in_obj(all, $fade_in_time);

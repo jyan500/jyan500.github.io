@@ -21,6 +21,7 @@ html, body {
 
 }
 .main {
+	overflow: auto;
 	.container {
 		min-height: 100vh;
 		padding-left: $left;
@@ -32,23 +33,10 @@ html, body {
 		border-bottom: 1px solid white;
 	}
 	h1 {
-		font-size: 3em;
+		font-size: $subheader-font-size;
 	}
 }
-.parallax {
-	// background-image: $image_url_2;
-	// background-position: center;
-	// background-repeat: no-repeat;
-	// background-size: cover;
-	// background-attachment: fixed;
-
-}
 #home {
-	// background-image: $image_url;
-	// background-position: center;
-	// background-repeat: no-repeat;
-	// background-size: cover;
-	height: 100vh;
 	.hero-card {
 		text-align: center;
 		width: 75%;
@@ -56,7 +44,7 @@ html, body {
 		margin-bottom: 100px;
 		font-family: 'Lato', sans-serif;
 		h1 {
-			font-size: 6em;
+			font-size: $hero-font-size;
 		}
 		p {
 			font-size: 1.8em;
@@ -87,8 +75,7 @@ html, body {
 				padding-left: 5px;	
 				padding-right: 5px;
 			}
-			@include link_hover(1em, .25s);
-			@include shadow(#EEEEEE);
+			@include link_hover(1em, black, .25s);
 		}
 	}
 }

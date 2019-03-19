@@ -1,18 +1,19 @@
 @import 'variables';
 @import 'mixins';
-header {
+nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding-left: $left;
 	padding-right: $right;
+	background: transparent;
 	ul {
 		list-style: none;
 		height: 100%;
 		li {
 			display: inline-block;
 			padding-left: 40px;
-			@include link_hover($nav-links-font-size, .25s);
+			@include link_hover($nav-links-font-size, black, .25s);
 		}
 	}
 }
