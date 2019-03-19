@@ -7,6 +7,10 @@ html, body {
 	height: 100%;
 	margin: 0;
 	padding: 0;
+}
+body {
+	display: flex;
+	flex-direction: column;
 	font-family: 'Source Sans Pro', sans-serif;
 	a {
 		text-decoration: none;
@@ -18,10 +22,24 @@ html, body {
 	p {
 		font-family: 'Lato', sans-serif;
 	}
-
+}
+.sticky {
+	position: fixed;	
+	top: 0;
+	width: 100%;
+	z-index: 9999;
+}
+.fade-in {
+	@include fade-in(1s);
+}
+.fade-out {
+	@include fade_out_obj(all, .5s);
+}
+.shadow {
+	@include shadow(#EEEEEE);
 }
 .main {
-	overflow: auto;
+	flex: 1;
 	.container {
 		min-height: 100vh;
 		padding-left: $left;
@@ -124,6 +142,7 @@ html, body {
 		}
 	}
 }
+
 
 
 

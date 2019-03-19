@@ -1,6 +1,7 @@
 @import 'variables';
 @import 'mixins';
 nav {
+	$color: black;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -13,9 +14,14 @@ nav {
 		li {
 			display: inline-block;
 			padding-left: 40px;
-			@include link_hover($nav-links-font-size, black, .25s);
 		}
 	}
+}
+.normal-hover {
+	@include link_hover($nav-links-font-size, black, .25s);
+}
+.reverse-hover {
+	@include link_hover($nav-links-font-size, white, .25s);
 }
 .hamburger {
 	display: none;

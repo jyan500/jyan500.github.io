@@ -102,6 +102,14 @@
  	-ms-transition: $fade_in_var;
 }
 
+@mixin fade_out_obj($obj, $fade_out_time){
+	$fade_out_var : $obj $fade_out_time ease-out 0s;
+	transition:  $fade_out_var;
+	-webkit-transition: $fade_out_var;
+	-moz-transition: $fade_out_var;
+	-o-transtiion: $fade_out_var;
+	-ms-transition: $fade_out_var;	
+}
 @mixin link_hover($font_size, $color, $fade_in_time){
 	a{
 		font-size: $font_size;

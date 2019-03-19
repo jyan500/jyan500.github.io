@@ -7,21 +7,96 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
   font-family: "Source Sans Pro", sans-serif;
 }
-html a, body a {
+body a {
   text-decoration: none;
   color: black;
 }
-html a:visited, body a:visited {
+body a:visited {
   color: black;
 }
-html p, body p {
+body p {
   font-family: "Lato", sans-serif;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+.fade-in {
+  animation: fadeIn 1s ease forwards;
+  -webkit-animation: fadeIn 1s ease forwards;
+  -moz-animation: fadeIn 1s ease forwards;
+  -o-animation: fadeIn 1s ease forwards;
+  -ms-animation: fadeIn 1s ease forwards;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-out {
+  transition: all 0.5s ease-out 0s;
+  -webkit-transition: all 0.5s ease-out 0s;
+  -moz-transition: all 0.5s ease-out 0s;
+  -o-transtiion: all 0.5s ease-out 0s;
+  -ms-transition: all 0.5s ease-out 0s;
+}
+
+.shadow {
+  -webkit-box-shadow: 8px 7px 7px 1px #EEEEEE;
+  -moz-box-shadow: 8px 7px 7px 1px #EEEEEE;
+  -o-box-shadow: 8px 7px 1px 1px #EEEEEE;
+  box-shadow: 8px 7px 7px 1px #EEEEEE;
+}
+
 .main {
-  overflow: auto;
+  flex: 1;
 }
 .main .container {
   min-height: 100vh;

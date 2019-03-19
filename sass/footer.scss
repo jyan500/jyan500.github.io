@@ -3,7 +3,7 @@
 footer {
 	padding-left: $left;
 	padding-right: $right;
-	padding-bottom: $right;
+	padding-bottom: $right - $right/2;
 	a {
 		text-decoration: none;
 		color: black;
