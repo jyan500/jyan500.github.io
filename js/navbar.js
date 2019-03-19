@@ -2,6 +2,10 @@ $(document).ready(function(){
 
 	// default normal hover, with black text and black hover 
 	$('header ul li').addClass('normal-hover');
+
+	// set a top padding which is equal to the header height to avoid jumpiness when sticky element becomes fixed
+	$('.main').css('padding-top', $("header").height());
+	
 	// smooth scroll
 	$("header a").click(function(e){
 		if (this.hash !== ""){

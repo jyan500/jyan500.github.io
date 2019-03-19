@@ -29,9 +29,9 @@ body {
 	width: 100%;
 	z-index: 9999;
 }
-.sticky + .main {
-	padding-top: 71px;
-}
+// .sticky + .main {
+// 	padding-top: 71px;
+// }
 .fade-in {
 	@include fade-in(1s);
 }
