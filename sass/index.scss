@@ -33,7 +33,7 @@ body {
 // 	padding-top: 71px;
 // }
 .fade-in {
-	@include fade-in(1s);
+	@include fade_in_obj(all, .5s);
 }
 .fade-out {
 	@include fade_out_obj(all, .5s);
@@ -84,7 +84,7 @@ body {
 		flex-wrap: wrap;
 		.project-card {
 			flex: 1 1 0;
-			margin-left: 10px;
+			margin-left: 20px;
 			padding-bottom: 20px;
 			text-align: center;
 			border: 2px solid #EEEEEE;
@@ -97,6 +97,9 @@ body {
 				padding-right: 5px;
 			}
 			@include link_hover(1em, black, .25s);
+			&:hover {
+				z-index: 1;
+			}
 		}
 	}
 }
@@ -147,12 +150,17 @@ body {
 				color: white;
 				border-radius: 10px;
 				@include transition_transform(.15s);
+				z-index: 1;
 				&:hover{
 					@include transition_scale(1.2);	
 				}
 			}
 		}
 	}
+}
+
+#contact-me {
+	@include link_hover(1em, black, .25s);
 }
 
 

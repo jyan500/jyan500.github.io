@@ -33,51 +33,11 @@ body p {
 }
 
 .fade-in {
-  animation: fadeIn 1s ease forwards;
-  -webkit-animation: fadeIn 1s ease forwards;
-  -moz-animation: fadeIn 1s ease forwards;
-  -o-animation: fadeIn 1s ease forwards;
-  -ms-animation: fadeIn 1s ease forwards;
-}
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-moz-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-o-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-ms-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+  transition: all 0.5s ease-in-out 0s;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  -moz-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.5s ease-in-out 0s;
+  -ms-transition: all 0.5s ease-in-out 0s;
 }
 
 .fade-out {
@@ -134,7 +94,7 @@ body p {
 }
 #projects .projects-container .project-card {
   flex: 1 1 0;
-  margin-left: 10px;
+  margin-left: 20px;
   padding-bottom: 20px;
   text-align: center;
   border: 2px solid #EEEEEE;
@@ -181,6 +141,9 @@ body p {
   -webkit-transform: scaleX(1);
   -moz-transform: scaleX(1);
   -o-transform: scaleX(1);
+}
+#projects .projects-container .project-card:hover {
+  z-index: 1;
 }
 
 #about-me .description-card {
@@ -231,11 +194,48 @@ body p {
   -moz-transition: -moz-transform 0.15s linear;
   -o-transition: -o-transform 0.15s linear;
   -webkit-transition: -webkit-transform 0.15s linear;
+  z-index: 1;
 }
 #about-me .skills-row .skill-container li:hover {
   -webkit-transform: scale(1.2);
   -moz-transform: scale(1.2);
   -o-transform: scale(1.2);
+}
+
+#contact-me a {
+  font-size: 1em;
+  text-decoration: none;
+  position: relative;
+}
+#contact-me a:visited {
+  color: black;
+  text-decoration: none;
+}
+#contact-me a:before {
+  content: "";
+  position: absolute;
+  margin-bottom: -5px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  background-color: black;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  -moz-transform: scaleX(0);
+  -o-transform: scaleX(0);
+  transition: all 0.25s ease-in-out 0s;
+  -webkit-transition: all 0.25s ease-in-out 0s;
+  -moz-transition: all 0.25s ease-in-out 0s;
+  -o-transition: all 0.25s ease-in-out 0s;
+  -ms-transition: all 0.25s ease-in-out 0s;
+}
+#contact-me a:hover:before {
+  /* set visibility back to visible for browser support */
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  -moz-transform: scaleX(1);
+  -o-transform: scaleX(1);
 }
 
 /*# sourceMappingURL=index.css.map */
