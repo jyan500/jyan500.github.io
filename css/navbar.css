@@ -23,6 +23,9 @@ nav ul li {
   font-size: 1.2em;
   text-decoration: none;
   position: relative;
+  -webkit-tap-highlight-color: transparent;
+  -ms-tap-highlight-color: transparent;
+  -moz-tap-highlight-color: transparent;
 }
 .normal-hover a:visited {
   color: black;
@@ -59,6 +62,9 @@ nav ul li {
   font-size: 1.2em;
   text-decoration: none;
   position: relative;
+  -webkit-tap-highlight-color: transparent;
+  -ms-tap-highlight-color: transparent;
+  -moz-tap-highlight-color: transparent;
 }
 .reverse-hover a:visited {
   color: white;

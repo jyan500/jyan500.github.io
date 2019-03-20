@@ -137,6 +137,7 @@
 			visibility: visible;
 			@include transition_scale_X(1);
 		}
+		@include mobile-tap(transparent);
 	}
 }
 @mixin flex_column() {

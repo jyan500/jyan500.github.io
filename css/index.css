@@ -153,6 +153,9 @@ body p {
   font-size: 1em;
   text-decoration: none;
   position: relative;
+  -webkit-tap-highlight-color: transparent;
+  -ms-tap-highlight-color: transparent;
+  -moz-tap-highlight-color: transparent;
 }
 #projects .projects-container .project-card a:visited {
   color: black;
@@ -351,6 +354,9 @@ body p {
   font-size: 1em;
   text-decoration: none;
   position: relative;
+  -webkit-tap-highlight-color: transparent;
+  -ms-tap-highlight-color: transparent;
+  -moz-tap-highlight-color: transparent;
 }
 #contact-me a:visited {
   color: black;
