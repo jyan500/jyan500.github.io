@@ -47,5 +47,19 @@ footer a:hover:before {
   -moz-transform: scaleX(1);
   -o-transform: scaleX(1);
 }
+@media (min-width: 481px) and (max-width: 767px) {
+  footer {
+    margin-left: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  footer {
+    margin-left: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
 
 /*# sourceMappingURL=footer.css.map */

@@ -10,4 +10,14 @@ footer {
 		margin-left: 40px;
 	}
 	@include link_hover($nav-links-font-size, black, .25s);
+	@include mobile_landscape {
+		margin-left: 20px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	@include mobile_portrait {
+		margin-left: 20px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
 }

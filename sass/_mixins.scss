@@ -139,6 +139,12 @@
 		}
 	}
 }
+@mixin flex_column() {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
 
 @mixin desktop {
 	@media (min-width: #{$breakpoint_width_tablet + 1} ) and (max-width: #{$breakpoint_width_desktop}){

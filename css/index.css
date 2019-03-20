@@ -33,19 +33,19 @@ body p {
 }
 
 .fade-in {
-  transition: all 0.5s ease-in-out 0s;
-  -webkit-transition: all 0.5s ease-in-out 0s;
-  -moz-transition: all 0.5s ease-in-out 0s;
-  -o-transition: all 0.5s ease-in-out 0s;
-  -ms-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.8s ease-in-out 0s;
+  -webkit-transition: all 0.8s ease-in-out 0s;
+  -moz-transition: all 0.8s ease-in-out 0s;
+  -o-transition: all 0.8s ease-in-out 0s;
+  -ms-transition: all 0.8s ease-in-out 0s;
 }
 
 .fade-out {
-  transition: all 0.5s ease-out 0s;
-  -webkit-transition: all 0.5s ease-out 0s;
-  -moz-transition: all 0.5s ease-out 0s;
-  -o-transtiion: all 0.5s ease-out 0s;
-  -ms-transition: all 0.5s ease-out 0s;
+  transition: all 0.8s ease-out 0s;
+  -webkit-transition: all 0.8s ease-out 0s;
+  -moz-transition: all 0.8s ease-out 0s;
+  -o-transtiion: all 0.8s ease-out 0s;
+  -ms-transition: all 0.8s ease-out 0s;
 }
 
 .shadow {
@@ -68,6 +68,32 @@ body p {
   flex-direction: column;
   border-bottom: 1px solid white;
 }
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .main .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .main .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .main .container {
+    min-height: 50vh;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .main .container {
+    min-height: 50vh;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
 .main h1 {
   font-size: 3em;
 }
@@ -84,6 +110,22 @@ body p {
 }
 #home .hero-card p {
   font-size: 1.8em;
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  #home .hero-card {
+    margin-bottom: 50px;
+  }
+  #home .hero-card h1 {
+    font-size: 5em;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  #home .hero-card {
+    margin-bottom: 50px;
+  }
+  #home .hero-card h1 {
+    font-size: 5em;
+  }
 }
 
 #projects .projects-container {
@@ -145,7 +187,47 @@ body p {
 #projects .projects-container .project-card:hover {
   z-index: 1;
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+  #projects .projects-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  #projects .projects-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #projects .projects-container .project-card {
+    margin-left: 0;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  #projects .projects-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #projects .projects-container .project-card {
+    margin-left: 0;
+  }
+}
 
+@media (min-width: 481px) and (max-width: 767px) {
+  #about-me .tech-header {
+    margin-left: 20px;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  #about-me .tech-header {
+    margin-left: 20px;
+  }
+}
 #about-me .description-card {
   display: flex;
   align-items: center;
@@ -161,10 +243,68 @@ body p {
   font-weight: 300;
   font-size: 1em;
 }
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  #about-me .description-card .description p {
+    padding-top: 10px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  #about-me .description-card .description p {
+    padding-top: 10px;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  #about-me .description-card .description p {
+    text-align: center;
+    padding-top: 10px;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  #about-me .description-card .description p {
+    text-align: center;
+    padding-top: 10px;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  #about-me .description-card .description {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  #about-me .description-card .description {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
 #about-me .description-card img {
   width: 25vh;
   height: 25vh;
   border-radius: 50%;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  #about-me .description-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  #about-me .description-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  #about-me .description-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 #about-me .skills-row {
   display: flex;
@@ -201,7 +341,12 @@ body p {
   -moz-transform: scale(1.2);
   -o-transform: scale(1.2);
 }
-
+@media (min-width: 481px) and (max-width: 767px) {
+  #about-me h2 {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
 #contact-me a {
   font-size: 1em;
   text-decoration: none;
