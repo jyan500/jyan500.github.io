@@ -1,5 +1,6 @@
 @import 'variables';
 @import 'mixins';
+@import 'shared';
 nav {
 	$color: black;
 	display: flex;
@@ -48,6 +49,22 @@ nav {
 		margin: 0 auto 5px;
 	}
 }
+.mobile-nav {
+	opacity: 0;
+	visibility: hidden;
+	ul {
+		list-style: none;
+		padding-top: 30px;
+		padding-left: 0;
+		@include flex_column();
+		li {
+			padding: 10px;
+			a {
+
+			}
+		}
+	}
+}
 @include tablet_landscape {
 
 }
@@ -55,7 +72,7 @@ nav {
 
 }
 @include mobile_landscape {
-	nav {
+	header {
 		display: none;
 	}
 	.hamburger {
@@ -64,6 +81,12 @@ nav {
 	.show-navbar {
 		display: block;
 	}
+	.mobile-nav {
+		ul {
+			@include flex_column();
+		}
+	}
+	
 }
 @include mobile_portrait {
 	nav {
@@ -74,5 +97,10 @@ nav {
 	}
 	.show-navbar {
 		display: block;
+	}
+	.mobile-nav {
+		ul {
+			@include flex_column();
+		}
 	}
 }

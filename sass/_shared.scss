@@ -1,0 +1,17 @@
+@import 'mixins';
+@import 'variables';
+.fade-in-1 {
+	@include fade_in_obj(all, $fade-1);
+}
+.fade-out-1 {
+	@include fade_out_obj(all, $fade-1);
+}
+.fade-in-2 {
+	@include fade_in_obj(all, $fade-2);
+}
+.fade-out-2{
+	@include fade_out_obj(all, $fade-2);
+}
+.shadow {
+	@include shadow(#EEEEEE);
+}

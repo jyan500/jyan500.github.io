@@ -2,6 +2,49 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito");
 @import url("https://fonts.googleapis.com/css?family=Lato");
 @import url("https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Merriweather|Nunito");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+@import url("https://fonts.googleapis.com/css?family=Lato");
+@import url("https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Merriweather|Nunito");
+.fade-in-1 {
+  transition: all 0.8s ease-in-out 0s;
+  -webkit-transition: all 0.8s ease-in-out 0s;
+  -moz-transition: all 0.8s ease-in-out 0s;
+  -o-transition: all 0.8s ease-in-out 0s;
+  -ms-transition: all 0.8s ease-in-out 0s;
+}
+
+.fade-out-1 {
+  transition: all 0.8s ease-out 0s;
+  -webkit-transition: all 0.8s ease-out 0s;
+  -moz-transition: all 0.8s ease-out 0s;
+  -o-transtiion: all 0.8s ease-out 0s;
+  -ms-transition: all 0.8s ease-out 0s;
+}
+
+.fade-in-2 {
+  transition: all 0.5s ease-in-out 0s;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  -moz-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.5s ease-in-out 0s;
+  -ms-transition: all 0.5s ease-in-out 0s;
+}
+
+.fade-out-2 {
+  transition: all 0.5s ease-out 0s;
+  -webkit-transition: all 0.5s ease-out 0s;
+  -moz-transition: all 0.5s ease-out 0s;
+  -o-transtiion: all 0.5s ease-out 0s;
+  -ms-transition: all 0.5s ease-out 0s;
+}
+
+.shadow {
+  -webkit-box-shadow: 8px 7px 7px 1px #EEEEEE;
+  -moz-box-shadow: 8px 7px 7px 1px #EEEEEE;
+  -o-box-shadow: 8px 7px 1px 1px #EEEEEE;
+  box-shadow: 8px 7px 7px 1px #EEEEEE;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -125,8 +168,24 @@ nav ul li {
   margin: 0 auto 5px;
 }
 
+.mobile-nav {
+  opacity: 0;
+  visibility: hidden;
+}
+.mobile-nav ul {
+  list-style: none;
+  padding-top: 30px;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mobile-nav ul li {
+  padding: 10px;
+}
 @media (min-width: 481px) and (max-width: 767px) {
-  nav {
+  header {
     display: none;
   }
 
@@ -136,6 +195,13 @@ nav ul li {
 
   .show-navbar {
     display: block;
+  }
+
+  .mobile-nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 @media (min-width: 320px) and (max-width: 480px) {
@@ -149,6 +215,13 @@ nav ul li {
 
   .show-navbar {
     display: block;
+  }
+
+  .mobile-nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 

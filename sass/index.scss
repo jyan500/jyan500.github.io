@@ -31,18 +31,13 @@ body {
 	width: 100%;
 	z-index: 9999;
 }
-// .sticky + .main {
-// 	padding-top: 71px;
-// }
-.fade-in {
-	@include fade_in_obj(all, .8s);
+.sticky + .main {
+	padding-top: 71px;
+	@include mobile-portrait {
+		padding-top: 10px;
+	}
 }
-.fade-out {
-	@include fade_out_obj(all, .8s);
-}
-.shadow {
-	@include shadow(#EEEEEE);
-}
+
 .main {
 	flex: 1;
 	.container {
@@ -97,7 +92,6 @@ body {
 
 		}
 		@include mobile_landscape {
-			margin-bottom: 50px;
 			h1 {
 				font-size: $hero-font-size - 1;
 			}
@@ -106,7 +100,6 @@ body {
 			h1 {
 				font-size: $hero-font-size - 1;
 			}
-			margin-bottom: 50px;
 		}
 	}
 }

@@ -32,27 +32,13 @@ body p {
   z-index: 9999;
 }
 
-.fade-in {
-  transition: all 0.8s ease-in-out 0s;
-  -webkit-transition: all 0.8s ease-in-out 0s;
-  -moz-transition: all 0.8s ease-in-out 0s;
-  -o-transition: all 0.8s ease-in-out 0s;
-  -ms-transition: all 0.8s ease-in-out 0s;
+.sticky + .main {
+  padding-top: 71px;
 }
-
-.fade-out {
-  transition: all 0.8s ease-out 0s;
-  -webkit-transition: all 0.8s ease-out 0s;
-  -moz-transition: all 0.8s ease-out 0s;
-  -o-transtiion: all 0.8s ease-out 0s;
-  -ms-transition: all 0.8s ease-out 0s;
-}
-
-.shadow {
-  -webkit-box-shadow: 8px 7px 7px 1px #EEEEEE;
-  -moz-box-shadow: 8px 7px 7px 1px #EEEEEE;
-  -o-box-shadow: 8px 7px 1px 1px #EEEEEE;
-  box-shadow: 8px 7px 7px 1px #EEEEEE;
+@media (min-width: 320px) and (max-width: 480px) {
+  .sticky + .main {
+    padding-top: 10px;
+  }
 }
 
 .main {
@@ -112,17 +98,11 @@ body p {
   font-size: 1.8em;
 }
 @media (min-width: 481px) and (max-width: 767px) {
-  #home .hero-card {
-    margin-bottom: 50px;
-  }
   #home .hero-card h1 {
     font-size: 5em;
   }
 }
 @media (min-width: 320px) and (max-width: 480px) {
-  #home .hero-card {
-    margin-bottom: 50px;
-  }
   #home .hero-card h1 {
     font-size: 5em;
   }
