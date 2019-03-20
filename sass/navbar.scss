@@ -50,6 +50,7 @@ nav {
 	}
 }
 .mobile-nav {
+	display: none;
 	opacity: 0;
 	visibility: hidden;
 	ul {
@@ -82,6 +83,7 @@ nav {
 		display: block;
 	}
 	.mobile-nav {
+		display: block;
 		ul {
 			@include flex_column();
 		}
@@ -99,6 +101,7 @@ nav {
 		display: block;
 	}
 	.mobile-nav {
+		display: block;
 		ul {
 			@include flex_column();
 		}

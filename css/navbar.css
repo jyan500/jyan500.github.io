@@ -169,6 +169,7 @@ nav ul li {
 }
 
 .mobile-nav {
+  display: none;
   opacity: 0;
   visibility: hidden;
 }
@@ -197,6 +198,9 @@ nav ul li {
     display: block;
   }
 
+  .mobile-nav {
+    display: block;
+  }
   .mobile-nav ul {
     display: flex;
     flex-direction: column;
@@ -217,6 +221,9 @@ nav ul li {
     display: block;
   }
 
+  .mobile-nav {
+    display: block;
+  }
   .mobile-nav ul {
     display: flex;
     flex-direction: column;
