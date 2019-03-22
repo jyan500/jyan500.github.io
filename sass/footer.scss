@@ -12,13 +12,11 @@ footer {
 	}
 	@include link_hover($nav-links-font-size, black, .25s);
 	@include mobile_landscape {
-		margin-left: 20px;
-		padding-left: 10px;
-		padding-right: 10px;
+		padding: 0;
+		text-align: center;
 	}
 	@include mobile_portrait {
-		margin-left: 20px;
-		padding-left: 10px;
-		padding-right: 10px;
+		padding: 0;
+		text-align: center;
 	}
 }
