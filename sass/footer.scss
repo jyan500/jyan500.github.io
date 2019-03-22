@@ -9,14 +9,17 @@ footer {
 		text-decoration: none;
 		color: black;
 		margin-left: 40px;
+		i {
+			font-size: 2em;
+		}
 	}
 	@include link_hover($nav-links-font-size, black, .25s);
 	@include mobile_landscape {
-		padding: 0;
-		text-align: center;
+		padding-left: 0;
+		padding-right: 0;
 	}
 	@include mobile_portrait {
-		padding: 0;
-		text-align: center;
+		padding-left: 0;
+		padding-right: 0;
 	}
 }

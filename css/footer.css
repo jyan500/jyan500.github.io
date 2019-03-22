@@ -55,6 +55,9 @@ footer a {
   color: black;
   margin-left: 40px;
 }
+footer a i {
+  font-size: 2em;
+}
 footer a {
   font-size: 1.2em;
   text-decoration: none;
@@ -95,14 +98,14 @@ footer a:hover:before {
 }
 @media (min-width: 481px) and (max-width: 767px) {
   footer {
-    padding: 0;
-    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 @media (min-width: 320px) and (max-width: 480px) {
   footer {
-    padding: 0;
-    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
