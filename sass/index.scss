@@ -55,12 +55,10 @@ body {
 			padding-right: 20px;
 		}
 		@include mobile_landscape {
-			min-height: 50vh;
 			padding-left: 10px;
 			padding-right: 10px;
 		}
 		@include mobile_portrait {
-			min-height: 50vh;
 			padding-left: 10px;
 			padding-right: 10px;
 		}
@@ -71,16 +69,16 @@ body {
 }
 #home {
 	@include mobile_landscape {
-		justify-content: flex-start;
+		justify-content: center;
 	}
 	@include mobile_portrait {
-		justify-content: flex-start;
+		justify-content: center;
 	}
 	.hero-card {
 		text-align: center;
 		width: 75%;
 		padding: 30px;
-		margin-bottom: 250px;
+		margin-bottom: 100px;
 		font-family: 'Lato', sans-serif;
 		h1 {
 			margin-top: 0px;
@@ -204,8 +202,8 @@ body {
 			}
 		}
 		img {
-			width: 25vh;
-			height: 25vh;
+			max-width: 100%;
+			height: auto;
 			border-radius: 50%;
 		}
 		@include tablet_landscape {

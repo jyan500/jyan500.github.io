@@ -76,34 +76,34 @@ nav {
 	header {
 		display: none;
 	}
-	.hamburger {
-		display: block;
-	}
-	.show-navbar {
-		display: block;
-	}
-	.mobile-nav {
-		display: block;
-		ul {
-			@include flex_column();
-		}
-	}
+	// .hamburger {
+	// 	display: block;
+	// }
+	// .show-navbar {
+	// 	display: block;
+	// }
+	// .mobile-nav {
+	// 	display: block;
+	// 	ul {
+	// 		@include flex_column();
+	// 	}
+	// }
 	
 }
 @include mobile_portrait {
 	nav {
 		display: none;
 	}
-	.hamburger {
-		display: block;
-	}
-	.show-navbar {
-		display: block;
-	}
-	.mobile-nav {
-		display: block;
-		ul {
-			@include flex_column();
-		}
-	}
+	// .hamburger {
+	// 	display: block;
+	// }
+	// .show-navbar {
+	// 	display: block;
+	// }
+	// .mobile-nav {
+	// 	display: block;
+	// 	ul {
+	// 		@include flex_column();
+	// 	}
+	// }
 }

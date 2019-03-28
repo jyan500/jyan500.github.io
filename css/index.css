@@ -65,14 +65,12 @@ body p {
 }
 @media (min-width: 481px) and (max-width: 767px) {
   .main .container {
-    min-height: 50vh;
     padding-left: 10px;
     padding-right: 10px;
   }
 }
 @media (min-width: 320px) and (max-width: 480px) {
   .main .container {
-    min-height: 50vh;
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -83,19 +81,19 @@ body p {
 
 @media (min-width: 481px) and (max-width: 767px) {
   #home {
-    justify-content: flex-start;
+    justify-content: center;
   }
 }
 @media (min-width: 320px) and (max-width: 480px) {
   #home {
-    justify-content: flex-start;
+    justify-content: center;
   }
 }
 #home .hero-card {
   text-align: center;
   width: 75%;
   padding: 30px;
-  margin-bottom: 250px;
+  margin-bottom: 100px;
   font-family: "Lato", sans-serif;
 }
 #home .hero-card h1 {
@@ -275,8 +273,8 @@ body p {
   }
 }
 #about-me .description-card img {
-  width: 25vh;
-  height: 25vh;
+  max-width: 100%;
+  height: auto;
   border-radius: 50%;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
