@@ -65,12 +65,14 @@ body p {
 }
 @media (min-width: 481px) and (max-width: 767px) {
   .main .container {
+    min-height: 50vh;
     padding-left: 10px;
     padding-right: 10px;
   }
 }
 @media (min-width: 320px) and (max-width: 480px) {
   .main .container {
+    min-height: 50vh;
     padding-left: 10px;
     padding-right: 10px;
   }
