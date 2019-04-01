@@ -2,7 +2,6 @@ $(document).ready(function(){
 
 	// default normal hover, with black text and black hover 
 	$('header ul li').addClass('normal-hover');
-
 	// smooth scroll
 	function smoothScroll(element, time){
 		element.click(function(e){
@@ -26,27 +25,25 @@ $(document).ready(function(){
 	// handle sticky navbar 
 	// get offset position of the navbar 
 	let sticky = header.offset().top;
+	$('header').addClass('sticky');
 	console.log('sticky offset position: ' , sticky);
 	// add the sticky class to the header when you reach its scroll position
-	$(window).scroll(function(){
-		let scrollPosition = $(this).scrollTop();
-		if (scrollPosition > sticky){
-			$('header nav ul li').removeClass('normal-hover');
-			$('header nav ul li').addClass('reverse-hover');
-			$('header').removeClass("fade-out-1");
-			$('header').addClass("sticky fade-in-1")
-			$('header').css('background', 'black');
-			$('header h1').css('color', 'white');
-		}
-		else {
-			$('header nav ul li').removeClass('reverse-hover');
-			$('header nav ul li').addClass('normal-hover');
-			$('header').removeClass("sticky fade-in-1");
-			$('header').addClass("fade-out-1");
-			$('header').css('background', 'white');
-			$('header h1').css('color', 'black');
-		}
-	});
+	// $(window).scroll(function(){
+	// 	let scrollPosition = $(this).scrollTop();
+	// 	if (scrollPosition > sticky){
+	// 		$('header nav ul li').addClass('reverse-hover');
+	// 		$('header').removeClass("fade-out-1");
+	// 		$('header').addClass("sticky fade-in-1")
+	// 		$('header').css('background', 'black');
+	// 		$('header h1').css('color', 'white');
+	// 	}
+	// 	else {
+	// 		$('header').removeClass("sticky fade-in-1");
+	// 		$('header').addClass("fade-out-1");
+	// 		$('header').css('background', 'white');
+	// 		$('header h1').css('color', 'black');
+	// 	}
+	// });
 
 	$('.show-navbar').click(function(){
 		console.log('clicked');

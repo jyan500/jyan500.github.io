@@ -1,6 +1,10 @@
 @import 'variables';
 @import 'mixins';
 @import 'shared';
+header {
+	box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);	
+	background: white;
+}
 nav {
 	$color: black;
 	display: flex;
@@ -8,7 +12,6 @@ nav {
 	align-items: center;
 	padding-left: $left;
 	padding-right: $right;
-	background: transparent;
 	ul {
 		list-style: none;
 		height: 100%;

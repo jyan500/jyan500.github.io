@@ -45,13 +45,17 @@
   box-shadow: 8px 7px 7px 1px #EEEEEE;
 }
 
+header {
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+  background: white;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-left: 80px;
   padding-right: 80px;
-  background: transparent;
 }
 nav ul {
   list-style: none;
