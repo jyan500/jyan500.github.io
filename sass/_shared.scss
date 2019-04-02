@@ -12,6 +12,3 @@
 .fade-out-2{
 	@include fade_out_obj(all, $fade-2);
 }
-.shadow {
-	@include shadow(#EEEEEE);
-}

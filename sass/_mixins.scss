@@ -35,11 +35,13 @@
 	background: linear-gradient(to bottom, $color_start 0%, $color_end 30%);
 }
 
-@mixin shadow($color){
-	-webkit-box-shadow: 8px 7px 7px 1px $color;
-	-moz-box-shadow: 8px 7px 7px 1px $color;
-	-o-box-shadow: 8px 7px 1px 1px $color;
-	box-shadow: 8px 7px 7px 1px $color;
+@mixin shadow($horizontal_offset, $vertical_offset, $blur_radius, $spread_radius, $color){
+	$var: $horizontal_offset $vertical_offset $blur_radius $spread_radius $color;
+	// -webkit-box-shadow: 8px 7px 7px 1px $color;
+	-webkit-box-shadow: $var;
+	-moz-box-shadow: $var;
+	-o-box-shadow: $var;
+	box-shadow: $var;
 }
 @mixin fade_in($fade_in_time){
 	animation: fadeIn $fade_in_time ease forwards;

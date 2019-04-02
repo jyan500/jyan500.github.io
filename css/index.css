@@ -81,6 +81,9 @@ body p {
   font-size: 3em;
 }
 
+#home {
+  margin-top: 100px;
+}
 @media (min-width: 481px) and (max-width: 767px) {
   #home {
     justify-content: center;
@@ -91,11 +94,13 @@ body p {
     justify-content: center;
   }
 }
+#home .banner-image img {
+  max-width: 100%;
+  height: auto;
+}
 #home .hero-card {
   text-align: center;
   width: 75%;
-  padding: 30px;
-  margin-bottom: 100px;
   font-family: "Lato", sans-serif;
 }
 #home .hero-card h1 {

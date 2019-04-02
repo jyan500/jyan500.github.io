@@ -38,13 +38,6 @@
   -ms-transition: all 0.5s ease-out 0s;
 }
 
-.shadow {
-  -webkit-box-shadow: 8px 7px 7px 1px #EEEEEE;
-  -moz-box-shadow: 8px 7px 7px 1px #EEEEEE;
-  -o-box-shadow: 8px 7px 1px 1px #EEEEEE;
-  box-shadow: 8px 7px 7px 1px #EEEEEE;
-}
-
 footer {
   padding-left: 80px;
   padding-right: 80px;
