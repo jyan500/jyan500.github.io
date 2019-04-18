@@ -1,0 +1,250 @@
+@import 'shared';
+@import 'mixins';
+header{
+	@include gradient_image(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2), '../assets/hero-image-min.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 100vh;
+	nav {
+		padding-top: 20px;
+		ul {
+			display: flex;
+			list-style: none;
+			justify-content: center;
+			align-items: center;
+			margin: 0;
+			padding: 0;
+			li {
+				display: inline-block;
+				a{
+					color: white;
+					text-decoration: none;
+					font-size: 1.2em;
+					font-weight: 700;
+					padding-left: 20px;
+					padding-right: 20px;
+				}
+			}
+		}
+	}
+	h1 {
+		color: white;
+		text-align: center;
+		margin-top: 100px;
+		font-size: 3em;
+	}
+}
+.order {
+	padding: 10px;
+	min-height: 50vh;	
+	h1 {
+		text-align: center;
+		font-size: 3em;
+	}
+	.img-row {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		.image {
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+			img {
+				width: 40vh;
+				height: 40vh;
+				margin: 0 30px;
+			}
+			.caption {
+				padding: 30px;
+			}
+		}
+
+		i {
+			font-size: 2.5em;
+		}
+		@include mobile_portrait {
+			i {
+				display: none;
+			}
+		}
+		@include mobile_landscape {
+			i {
+				display: none;
+			}
+		}
+		@include tablet_portrait {
+
+		}
+		@include tablet_landscape {
+
+		}
+
+	}
+}
+
+.latest {
+	padding: 10px;
+	min-height: 100vh;	
+	background-color: $dark-yellow;
+	color: white;
+	text-align: center;
+	h1 {
+		font-size: 3em;
+	}
+	.select-button {
+		margin-top: 50px;
+		margin-bottom: 55px;	
+		a {
+			background-color: $dark-grey;
+			padding: 10px;
+			text-decoration: none;
+			border-radius: 3px;
+			font-size: 1.5em;
+			color: white;
+			font-weight: 400;
+			opacity: 1;
+			@include fade_in_obj(opacity, .25s);
+			&:hover{
+				opacity: .8;
+				@include fade_out_obj(opacity, .25s);
+			}
+		}
+
+	}
+	.produce-gallery {
+		.cell {
+			margin: 1rem;
+		}
+		img {
+			max-width: 100%;
+			border: 5px solid white;
+		}
+		@include mobile_portrait {
+			.cell {
+				display: block;
+			}
+		}
+		@include mobile_landscape {
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: row;
+			.cell {
+				width: calc(50% - 2rem);
+			}	
+		}
+		@include tablet_portrait {
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: row;
+			.cell {
+				width: calc(50% - 2rem);
+			}	
+		}
+		@include tablet_landscape {
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: row;
+			.cell {
+				width: calc(33.33% - 2rem);
+			}
+
+		}
+		@include desktop {
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: row;
+			.cell {
+				width: calc(33.33% - 2rem);
+			}
+		}
+
+
+	}
+}
+
+.about-us {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-top: 20px;	
+	h1 {
+		text-align: center;
+		font-size: 3em;
+	}
+	.about-us-row {
+		display: flex;
+		justify-content: center;
+		align-items:center;
+		flex-wrap: wrap;
+		flex-direction: row;
+		.cell {
+			padding: 20px;
+		}
+		img {
+			max-width: 100%;
+			border: 5px solid $dark-yellow;
+		}
+	}
+	.description {
+		display: flex;
+		justify-content: center;
+		p {
+			width: 50%;
+			text-align: center;
+			font-size: 1.4em;
+			font-weight: 600;
+			@include tablet_portrait {
+				width: 75%;
+				margin-left: 20px;
+				padding-right: 20px;
+			}
+			@include mobile_portrait {
+				width: 100%;
+				margin-left: 20px;
+				padding-right: 20px;
+			}
+			@include mobile_landscape {
+				width: 100%;
+				margin-left: 20px;
+				padding-right: 20px;
+			}
+		}
+		padding-bottom: 20px;
+	}
+}
+
+footer {
+	min-height: 30vh;
+	background-color: $dark-grey;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	.social-media{
+		ul {
+			padding: 0;
+			list-style: none;
+			li {
+				padding-top: 10px;
+				display: inline-block;
+				a {
+					font-size: 2em;
+					color: $dark-yellow;
+					padding-right: 20px;
+					padding-left: 20px;
+				}
+			}
+		}
+	}
+	.location {
+		padding: 20px;
+		p {
+			text-align: center;
+			color: white;
+		}
+	}
+}

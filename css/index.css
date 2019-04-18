@@ -141,7 +141,7 @@ body p {
   border: 2px solid #EEEEEE;
 }
 #projects .projects-container .project-card img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 #projects .projects-container .project-card a {
