@@ -14,11 +14,13 @@ body {
 	display: flex;
 	flex-direction: column;
 	font-family: 'Source Sans Pro', sans-serif;
+	background-color: $blue-background;
+	color: white;
 	a {
 		text-decoration: none;
-		color: black;
+		color: white;
 		&:visited {
-			color: black;
+			color: white;
 		}
 	}
 	p {
@@ -46,7 +48,6 @@ body {
 		justify-content: center;
 		align-items: center;
 		flex-direction: column;
-		border-bottom: 1px solid white;
 		@include tablet_landscape {
 			padding-left: 20px;
 			padding-right: 20px;
@@ -130,7 +131,7 @@ body {
 			margin-left: 20px;
 			padding-bottom: 20px;
 			text-align: center;
-			border: 2px solid #EEEEEE;
+			@include shadow(0, 0, 3px, 0, white);
 			img {
 				max-width: 100%;
 				height: auto;
@@ -139,7 +140,7 @@ body {
 				padding-left: 5px;	
 				padding-right: 5px;
 			}
-			@include link_hover(1em, black, .25s);
+			@include link_hover(1em, white, .25s);
 			&:hover {
 				z-index: 1;
 			}
@@ -153,18 +154,23 @@ body {
 		@include mobile_landscape {
 			@include flex_column();
 			.project-card {
+				margin-top: 20px;
 				margin-left:0;
 			}
 		}
 		@include mobile_portrait {
 			@include flex_column();
 			.project-card {
+				margin-top: 20px;
 				margin-left:0;
 			}
 		}
 	}
 }
 #about-me {
+	h1 {
+		margin-top: 80px;
+	}
 	.tech-header {
 		@include mobile_landscape {
 			margin-left: 20px;
@@ -198,7 +204,7 @@ body {
 				margin: 0;
 				line-height: 1.5em;
 				font-weight: 300;
-				font-size: 1em;
+				font-size: 1.15em;
 				@include tablet_landscape {
 					padding-top: 10px;	
 				}
@@ -257,8 +263,8 @@ body {
 				margin-right: 10px;
 				margin-bottom: 10px;
 				border: 2px solid #EEEEEE;
-				background: black;
-				color: white;
+				background: white;
+				color: #01519F;
 				border-radius: 10px;
 				@include transition_transform(.15s);
 				z-index: 1;
@@ -281,7 +287,15 @@ body {
 }
 
 #contact-me {
-	@include link_hover(1em, black, .25s);
+	@include link_hover(1em, white, .25s);
+	.social-media {
+		font-size: 2em;
+		display: inline;
+		padding: 10px;
+		a {
+			margin: 5px;
+		}
+	}
 }
 
 

@@ -39,11 +39,11 @@
 }
 
 header {
-  -webkit-box-shadow: 0 0 3px 0 rgba(32, 33, 36, 0.28);
-  -moz-box-shadow: 0 0 3px 0 rgba(32, 33, 36, 0.28);
-  -o-box-shadow: 0 0 3px 0 rgba(32, 33, 36, 0.28);
-  box-shadow: 0 0 3px 0 rgba(32, 33, 36, 0.28);
-  background: white;
+  -webkit-box-shadow: 0 0 3px 0 white;
+  -moz-box-shadow: 0 0 3px 0 white;
+  -o-box-shadow: 0 0 3px 0 white;
+  box-shadow: 0 0 3px 0 white;
+  background: #3399FF;
 }
 
 nav {
@@ -71,7 +71,7 @@ nav ul li {
   -moz-tap-highlight-color: transparent;
 }
 .normal-hover a:visited {
-  color: black;
+  color: white;
   text-decoration: none;
 }
 .normal-hover a:before {
@@ -82,7 +82,7 @@ nav ul li {
   bottom: 0;
   left: 0;
   height: 2px;
-  background-color: black;
+  background-color: white;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   -moz-transform: scaleX(0);

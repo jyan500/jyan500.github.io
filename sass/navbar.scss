@@ -2,11 +2,11 @@
 @import 'mixins';
 @import 'shared';
 header {
-	@include shadow(0, 0, 3px, 0, rgba(32, 33, 36, 0.28));
-	background: white;
+	@include shadow(0, 0, 3px, 0, white);
+	background: $blue-background;
 }
 nav {
-	$color: black;
+	$color: white;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -22,7 +22,7 @@ nav {
 	}
 }
 .normal-hover {
-	@include link_hover($nav-links-font-size, black, .25s);
+	@include link_hover($nav-links-font-size, white, .25s);
 }
 .reverse-hover {
 	@include link_hover($nav-links-font-size, white, .25s);
