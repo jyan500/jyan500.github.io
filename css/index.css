@@ -83,7 +83,7 @@ body p {
 }
 
 #home {
-  margin-top: 100px;
+  margin-top: 50px;
 }
 @media (min-width: 481px) and (max-width: 767px) {
   #home {
@@ -413,5 +413,3 @@ body p {
 #contact-me .social-media a {
   margin: 5px;
 }
-
-/*# sourceMappingURL=index.css.map */
