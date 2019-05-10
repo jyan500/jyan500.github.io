@@ -83,7 +83,7 @@ body p {
 }
 
 #home {
-  margin-top: 50px;
+  margin-top: 45px;
 }
 @media (min-width: 481px) and (max-width: 767px) {
   #home {
